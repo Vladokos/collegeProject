@@ -1,0 +1,93 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: #af9572;
+}
+.header {
+  background-color: #3f2f22;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header__inner {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+}
+.title {
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  color: #f0e7d6;
+}
+.logo {
+  text-align: end;
+}
+.logo__img {
+  width: 10%;
+}
+.aboutProject {
+  padding: 80px 0 100px 0;
+}
+.aboutProjec-text {
+  color: #f0e7d6;
+  font-size: 18px;
+  line-height: 22px;
+}
+.map {
+  padding: 80px 0 100px 0;
+}
+.material {
+  display: grid;
+}
+.material::before {
+  content: "";
+  width: 840px;
+  height: 0px;
+  border: 2px dashed #443f2b;
+  transform: translate(150px, 120px) rotate(8deg);
+  top: 60%;
+  left: 28%;
+}
+.material::after {
+  content: "";
+  width: 389px;
+  height: 0px;
+  border: 2px dashed #443f2b;
+  transform: translate(603px, -135px) rotate(343deg);
+  top: 73%;
+  left: 52%;
+}
+.material__html {
+  color: #f0e7d6;
+  background-color: #af9572;
+  justify-self: start;
+  width: 20%;
+}
+
+.material__css {
+  color: #f0e7d6;
+  background-color: #af9572;
+  justify-self: end;
+  width: 20%;
+}
+.material__js {
+  color: #f0e7d6;
+  background-color: #af9572;
+  justify-self: center;
+  width: 20%;
+}
+.footer {
+  background-color: #3f2f22;
+}
+.footer__inner {
+  padding: 30px 0 0 0;
+}
+.aboutAuthor {
+  color: #f0e7d6;
+  padding: 0 0 40px 0;
+  text-align: center;
+}
