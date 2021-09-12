@@ -1,3 +1,61 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
 body {
-  background-color: bisque;
+  background-color: #af9572;
+}
+.page {
+  overflow: hidden;
+  display: grid;
+  grid-template-areas: "header", "content", "footer";
+  grid-template-rows: auto 1fr auto;
+  min-height: 100%;
+}
+.header {
+  background-color: #3f2f22;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.back__button-arrow {
+  width: 5%;
+}
+.sidebar {
+  position: absolute;
+  float: left;
+  color: #f0e7d6;
+}
+
+.firstOrder {
+  padding: 80px 0 35px 0;
+}
+.order {
+  color: #f0e7d6;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 35px;
+}
+.explanation {
+  padding: 100px 0 35px 0;
+  color: #f0e7d6;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 35px;
+}
+.next__lesson {
+  justify-self: end;
+}
+.next__button-arrow {
+  width: 32%;
+}
+.footer {
+  padding: 20px;
+  margin-top: auto;
+  background-color: #3f2f22;
+}
+.aboutAuthor {
+  color: #f0e7d6;
+  text-align: center;
 }

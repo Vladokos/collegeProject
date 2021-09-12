@@ -4,6 +4,13 @@
 body {
   background-color: #af9572;
 }
+.page {
+  overflow: hidden;
+  display: grid;
+  grid-template-areas: "header", "content", "footer";
+  grid-template-rows: auto 1fr auto;
+  min-height: 100%;
+}
 .header {
   background-color: #3f2f22;
 }
@@ -38,7 +45,7 @@ body {
   line-height: 22px;
 }
 .map {
-  padding: 80px 0 100px 0;
+  padding: 27px 0 30px 0;
 }
 .material {
   display: grid;
@@ -81,13 +88,99 @@ body {
   width: 20%;
 }
 .footer {
+  padding: 20px;
+  margin-top: auto;
   background-color: #3f2f22;
 }
 .footer__inner {
-  padding: 30px 0 0 0;
+  /* padding: 30px 0 0 0; */
 }
 .aboutAuthor {
   color: #f0e7d6;
-  padding: 0 0 40px 0;
+  /* padding: 0 0 40px 0; */
   text-align: center;
 }
+
+/* media */
+
+@media (max-width: 1556px) {
+  .material::after {
+    width: 375px;
+  }
+  .material::before {
+    width: 831px;
+  }
+}
+
+@media (max-width: 1144px) {
+  .material::after {
+    width: 360px;
+  }
+  .material::before {
+    width: 810px;
+  }
+}
+@media (max-width: 1024px) {
+  .material::after {
+    width: 325px;
+    transform: translate(529px, -108px) rotate(343deg);
+  }
+  .material::before {
+    width: 700px;
+  }
+  .logo__img {
+    width: 15%;
+  }
+}
+@media (max-width: 768px) {
+  .material::after {
+    width: 241px;
+    transform: translate(390px, -85px) rotate(343deg);
+  }
+  .material::before {
+    width: 529px;
+    transform: translate(98px, 87px) rotate(8deg);
+  }
+  .logo__img {
+    width: 21%;
+  }
+}
+@media (max-width: 425px) {
+  .material::after {
+    width: 128px;
+    transform: translate(211px, -44px) rotate(343deg);
+  }
+  .material::before {
+    width: 281px;
+    transform: translate(55px, 47px) rotate(8deg);
+  }
+  .logo__img {
+    width: 50%;
+  }
+}
+@media (max-width: 375px) {
+  .material::after {
+    width: 91px;
+    transform: translate(188px, -57px) rotate(334deg);
+  }
+  .material::before {
+    width: 207px;
+    transform: translate(68px, 58px) rotate(11deg);
+  }
+  .material__css,
+  .material__html,
+  .material__js {
+    width: 30%;
+  }
+}
+@media (max-width: 320px) {
+  .material::after {
+    width: 82px;
+    transform: translate(155px, -47px) rotate(327deg);
+  }
+  .material::before {
+    width: 159px;
+    transform: translate(63px, 47px) rotate(13deg);
+  }
+}
+/* media */
