@@ -6,37 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML learn</title>
     <link rel="stylesheet" href="../style/resetStyle.css" />
-    <link rel="stylesheet" href="../style/styleHtml.css" />
+    <link rel="stylesheet" href="../style/htmlStyles/styleHtml.css" />
+    <script src="../js/main.js" defer="defer"></script>
   </head>
   <body>
     <div class="page">
       <header class="header">
         <div class="container">
           <div class="header__inner">
-            <a href="../index.html" class="back__button"
-              ><img
-                src="../image/button/arrow_back.svg"
-                class="back__button-arrow"
-                alt="back"
-            /></a>
+            <div class="header__backButton">
+              <a href="../index.html" class="back__button"
+                ><img
+                  src="../image/button/arrow_back.svg"
+                  class="back__button-arrow"
+                  alt="back"
+              /></a>
+            </div>
+            <div class="header__numberLesson">Первая практика</div>
+            <div class="header__burgergMenu" id="header__burgergMenu">
+              <div class="burgerMenu__btn">
+                <div class="burgerMenu__btn2"></div>
+              </div>
+              <div class="burgerMenu__content" id="burgerMenu__content">
+                <ul>
+                  <li class="activeContent">Первая практика</li>
+                  <li><a href="htmlLesson2.html">Скучаная теория</a></li>
+                  <li>3</li>
+                  <li>4</li>
+                  <li>5</li>
+                  <li>6</li>
+                  <li>7</li>
+                  <li>8</li>
+                  <li>9</li>
+                  <li>10</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </header>
-      <!-- burger menu -->
-      <!-- <aside class="sidebar">
-        <ul class="content__navigation">
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-          <li>6</li>
-          <li>7</li>
-          <li>8</li>
-          <li>9</li>
-          <li>10</li>
-        </ul>
-      </aside> -->
       <section class="firstOrder">
         <div class="container">
           <div class="firstOrder__inner">
@@ -48,7 +56,7 @@
                 "</em
               >
               <br />
-              для того чтобы выполнить задание напиши в редакторе кода <br />
+              для того чтобы выполнить задание напишите в редакторе кода
               <p class="order__code">&lt;h1&gt; заголовок &lt;/h1&gt;</p>
             </div>
           </div>
@@ -64,7 +72,7 @@
             border: 0;
             border-radius: 4px;
             overflow: hidden;
-            margin: 5em 0 0 30em;
+            margin: 5em 0 0 25em;
           "
           title="competent-buck-wp73x"
           allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -110,6 +118,5 @@
         </div>
       </footer>
     </div>
-    <script src="js/main.js"></script>
   </body>
 </html>
