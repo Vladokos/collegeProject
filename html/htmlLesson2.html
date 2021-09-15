@@ -5,47 +5,143 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML learnt</title>
+    <link rel="stylesheet" href="../style/resetStyle.css" />
+    <link rel="stylesheet" href="../style/hamburgerStyle.css" />
+    <link rel="stylesheet" href="../style/htmlStyles/styleHtml2.css" />
+    <script src="../js/main.js" defer="defer"></script>
   </head>
   <body>
     <div class="page">
       <header class="header">
-        <div class="contaitner">
+        <div class="container">
           <div class="header__inner">
-            <div class="header__inner">
-              <div class="header__backButton">
-                <a href="../index.html" class="back__button"
-                  ><img
-                    src="../image/button/arrow_back.svg"
-                    class="back__button-arrow"
-                    alt="back"
-                /></a>
+            <div class="header__backButton">
+              <a href="../index.html" class="back__button"
+                ><img
+                  src="../image/button/arrow_back.svg"
+                  class="back__button-arrow"
+                  alt="back"
+              /></a>
+            </div>
+            <div class="header__numberLesson">Скучаная теория</div>
+            <div class="header__burgergMenu" id="header__burgergMenu">
+              <div class="burgerMenu__btn">
+                <div class="burgerMenu__btn2"></div>
               </div>
-              <div class="header__numberLesson">
-                Скучная теория
-                <div class="header__burgergMenu">
-                  <div class="burgerMenu__btn">
-                    <div class="burgerMenu__btn2"></div>
-                  </div>
-                  <div class="burgerMenu__content">
-                    <!-- <ul>
-                              <li>1</li>
-                              <li>2</li>
-                              <li>3</li>
-                              <li>4</li>
-                              <li>5</li>
-                              <li>6</li>
-                              <li>7</li>
-                              <li>8</li>
-                              <li>9</li>
-                              <li>10</li>
-                            </ul> -->
-                  </div>
-                </div>
+              <div class="burgerMenu__content" id="burgerMenu__content">
+                <ul>
+                  <li class="notActiveContent">
+                    <a href="htmlLearn.html">Первая практика</a>
+                  </li>
+                  <li class="activeContent">Скучаная теория</li>
+                  <li class="notActiveContent">Немного теори и практики</li>
+                  <li class="notActiveContent">Скоро будет</li>
+                  <li class="notActiveContent">Скоро будет</li>
+                  <li class="notActiveContent">Скоро будет</li>
+                  <li class="notActiveContent">Скоро будет</li>
+                  <li class="notActiveContent">Скоро будет</li>
+                  <li class="notActiveContent">Скоро будет</li>
+                  <li class="notActiveContent">Скоро будет</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </header>
+      <section class="theory">
+        <div class="container">
+          <div class="theory__inner">
+            <h2 class="hook" id="toolHtml">
+              <a href="#toolHtml"
+                ><img
+                  class="achor"
+                  src="../image/button/chain.svg" /></a
+              >Один из главных инструментов в создании страниц - HTML.
+            </h2>
+            <p>
+              HTML (Hyper Тext Markup Language) - это язык гипер текстовой
+              разметки для создания интернет страниц, был создан в
+              приблизительно в 1986—1991 годах, а опубликован в 1993.
+            </p>
+            <p>
+              В прошлом уроке Вы с ним не много поработали добавив заголовок (
+              <b>&lt;h1&gt; заголовок &lt;/h1&gt;</b> ). HTML не ограничивается
+              только одним заголовком в этом языке используются и множество
+              других тегов такие как <b>&lt;header&gt; &lt;/header&gt;</b>,<b
+                >&lt;div&gt; &lt;/div&gt;</b
+              >,<b>&lt;footer&gt; &lt;/footer&gt;</b>. . . но бояться нечего
+              потому что в основном для создания странцы будут использоваться не
+              все теги, а малое их количество.
+            </p>
+
+            <h2 class="hook" id="letsFigure">
+              <a href="#letsFigure"
+                ><img
+                  class="achor"
+                  src="../image/button/chain.svg"
+              /></a>
+              Давайте разбираться.
+            </h2>
+            <p>
+              В начале при создании HTML документа вам нужно будет написать его
+              стандарт, на данный момент используется стандарт HTML5 и чтобы
+              указать что мы его будем использовать нужно в начле написать
+              <b>&lt;!DOCTYPE html&gt;</b> теперь браузер будет знать что мы
+              используем стандарт HTML5
+            </p>
+
+            <p>
+              Далее нужно будет написать тег <b>&lt;html&gt; &lt;/html&gt;</b>
+              этот тег является контейнером для наших последующих тегов
+            </p>
+
+            <p>
+              Теперь нам нужно указать тег <b>&lt;head&gt; &lt;/head&gt;</b>
+              внутри этого тега будет содержаться информация для браузеров и
+              поисковых систем. Внутри этого тега мы добавим еще два тега
+              <b>&lt;meta charset="UTF-8"&gt</b>; и
+              <b>&lt;title&gt; Я заголовок &lt;/title&gt;</b>
+            </p>
+
+            <p>
+              <b>&lt;meta charset="UTF-8"&gt;</b> это тег определяет метатеги,
+              которые используются для хранения информации предназначенной для
+              браузеров и поисковых систем. В данный момент мы указали кодировку
+              внутири тега UTF-8 для того чтобы мы могли писать, добавлять
+              символы и это всё корректно отображалось на странце
+            </p>
+
+            <p>
+              <b>&lt;title&gt; Я заголовок &lt;/title&gt;</b> этот тег задаёт
+              заголовок для страницы. Когда Вы заходите на какую-нибудь страницу
+              можно увидить сверху что на вкладке которую вы открыли есть
+              название это задает <b>&lt;title&gt; &lt;/title&gt;</b>
+            </p>
+            <p>
+              После тега <b>&lt;head&gt; &lt;/head&gt;</b> нужно добавить тег
+              <b>&lt;body&gt; &lt;/body&gt;</b>внутри этого тега будет
+              содержаться множество других тегов с данными
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="next__lesson">
+        <a href="./htmlLesson3.html" class="next__button"
+          ><img
+            src="../image/button/arrow_next.svg"
+            class="next__button-arrow"
+            alt="next"
+          />
+        </a>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="aboutAuthor">Данные об авторе:</div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
