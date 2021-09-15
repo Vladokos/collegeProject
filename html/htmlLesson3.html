@@ -7,7 +7,7 @@
     <title>HTML learn</title>
     <link rel="stylesheet" href="../style/resetStyle.css" />
     <link rel="stylesheet" href="../style/hamburgerStyle.css" />
-    <link rel="stylesheet" href="../style/htmlStyles/styleHtml.css" />
+    <link rel="stylesheet" href="../style/htmlStyles/styleHtml3.css" />
     <script src="../js/main.js" defer="defer"></script>
   </head>
   <body>
@@ -23,20 +23,20 @@
                   alt="back"
               /></a>
             </div>
-            <div class="header__numberLesson">Первая практика</div>
+            <div class="header__numberLesson">Немного теори и практики</div>
             <div class="header__burgergMenu" id="header__burgergMenu">
               <div class="burgerMenu__btn">
                 <div class="burgerMenu__btn2"></div>
               </div>
               <div class="burgerMenu__content" id="burgerMenu__content">
                 <ul>
-                  <li class="activeContent">Первая практика</li>
+                  <li class="notActiveContent">
+                    <a href="htmlLearn.html">Первая практика</a>
+                  </li>
                   <li class="notActiveContent">
                     <a href="htmlLesson2.html">Скучаная теория</a>
                   </li>
-                  <li class="notActiveContent">
-                    <a href="htmlLesson3.html">Немного теори и практики</a>
-                  </li>
+                  <li class="activeContent">Немного теори и практики</li>
                   <li class="notActiveContent">Скоро будет</li>
                   <li class="notActiveContent">Скоро будет</li>
                   <li class="notActiveContent">Скоро будет</li>
@@ -50,25 +50,42 @@
           </div>
         </div>
       </header>
-      <section class="firstOrder">
+      <section class="theory">
         <div class="container">
-          <div class="firstOrder__inner">
-            <div class="order">
-              Главный разработчик оставил вам задание, в задании сказано:
-              <br />
-              <em>
-                - "У данной статьи должен быть <b>жирный и большой</b> заголовок
-                "</em
-              >
-              <br />
-              для того чтобы выполнить задание напишите в редакторе кода
-              <br />
-              <b>&lt;h1&gt; заголовок &lt;/h1&gt;</b>
-            </div>
+          <div class="theory__inner">
+            В данном блоке будут рассмотрены основные теги для создания сайта. В
+            теге <b>&lt;header&gt; &lt;/header&gt;</b> создается шапка сайта в
+            которой могут быть ссылки, логитп, название страницы и т.п. Для
+            примера на этом сайте тоже использовался тег
+            <b>&lt;header&gt; &lt;/header&gt;</b>
+            Вы можете видить его на самом верху сайта он будет с шокоадным
+            фоном.
+            <br />
+            В теге <b>&lt;div&gt; &lt;/div&gt;</b> создается информация о
+            продукте или любой другой контент. Для примера тега
+            <b>&lt;div&gt; &lt;/div&gt;</b> выступает данный текст
+            <br />
+            В теге <b>&lt;footer&gt; &lt;/footer&gt;</b> располагают в основном
+            контактную информацию, ссылке на какие-нибудь разделы и информацию
+            об авторском праве. Для примера на сайте с низу можно увидить
+            использование тега <b>&lt;footer&gt; &lt;/footer&gt;</b>
           </div>
         </div>
       </section>
-
+      <section class="task">
+        <div class="container">
+          <div class="task__inner">
+            Вам выдали <span class="taskInfo">таск</span>, в нем указано:
+            <ul>
+              <li>Добавьте шапку сайта и сделайте в шапке заголовок "Шапка"</li>
+              <li>Добавьте блок сайта и напишите в нем "Блок"</li>
+              <li>Добавте футер сайта и напишите в нем "Футер"</li>
+            </ul>
+            Если вам нужна подсказка
+            <div class="task__prompt"></div>
+          </div>
+        </div>
+      </section>
       <div class="code_redactor">
         <iframe
           src="https://codesandbox.io/embed/competent-buck-wp73x?fontsize=14&hidenavigation=1&theme=dark"
@@ -85,36 +102,16 @@
           sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
         ></iframe>
       </div>
-
-      <section class="explanation">
-        <div class="container">
-          <div class="explanation__inner">
-            Во время выполнения задания можно было заметить, что данный тег
-            делает текст <b>жирным</b> и БОЛЬШИМ. <br />
-            В HTML существует много тегов, один из которых был применен
-            называется заголовок <b>&lt;h1&gt;</b>.<br />
-            Кроме заголовка <b>&lt;h1&gt;</b> существует множество других
-            заголовков <b>&lt;h2&gt;</b>, <b>&lt;h3&gt;</b> и так далее, <br />
-            но у каждого заголовка своя суперсила, например: <br />
-            заголовок <b>&lt;h1&gt;</b> дделает текст большим и жирным, а также
-            его можно использовать только 1 раз в одном документе HTML, а
-            заголовок <b>&lt;h2&gt;</b> только 2 раза и так далее. <br />
-            По стандартам всего есть шесть уровней заголовков. <br />
-            Вы можете поиграться с ними в редакторе, который раньше был
-            использован для задания и наглядно посмотреть различия
-          </div>
-        </div>
-      </section>
-
-      <section class="next__lesson">
-        <a href="./htmlLesson2.html" class="next__button"
+      <!-- <img src="../image/Screenshot_1.png" /> -->
+      <!-- <section class="next__lesson">
+        <a href="./htmlLesson3.html" class="next__button"
           ><img
             src="../image/button/arrow_next.svg"
             class="next__button-arrow"
             alt="next"
           />
         </a>
-      </section>
+      </section> -->
 
       <footer class="footer">
         <div class="container">
