@@ -1,0 +1,76 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: #af9572;
+}
+p {
+  margin: 0 0 30px 10px;
+}
+h2 {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 32px;
+}
+.page {
+  overflow: hidden;
+  display: grid;
+  grid-template-areas: "header", "content", "footer";
+  grid-template-rows: auto 1fr auto;
+  min-height: 100%;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header {
+  background-color: #3f2f22;
+}
+.header__inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.back__button-arrow {
+  width: 10%;
+}
+.header__numberLesson {
+  color: #f0e7d6;
+  line-height: 50px;
+  text-align: center;
+  font-size: 22px;
+}
+.theory {
+  padding: 80px 0 35px 0;
+}
+.theory__inner {
+  color: #f0e7d6;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 35px;
+}
+.achor {
+  visibility: hidden;
+  width: 2.5%;
+  margin-top: 5px;
+  float: left;
+}
+.hook:hover .achor {
+  visibility: visible;
+}
+.next__lesson {
+  justify-self: end;
+}
+.next__button-arrow {
+  width: 32%;
+}
+.footer {
+  padding: 20px;
+  margin-top: auto;
+  background-color: #3f2f22;
+}
+.aboutAuthor {
+  color: #f0e7d6;
+  text-align: center;
+}
