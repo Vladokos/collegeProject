@@ -6,6 +6,9 @@
   font-weight: 500;
   line-height: 35px;
 }
-.theory__list {
+.theory__list,
+.theory__img,
+.theory__link,
+.theory__button {
   padding-bottom: 80px;
 }
