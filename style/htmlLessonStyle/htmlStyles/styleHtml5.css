@@ -1,0 +1,23 @@
+.task {
+  padding: 80px 0 35px 0;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 35px;
+}
+.answer {
+  padding: 80px 0 35px 0;
+}
+.answer__inner {
+  color: #f0e7d6;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 35px;
+}
+.answer__code {
+  visibility: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.answer__inner:hover .answer__code {
+  visibility: visible;
+}

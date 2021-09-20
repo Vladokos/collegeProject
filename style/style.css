@@ -60,12 +60,16 @@
   justify-self: end;
   width: 20%;
 }
+.material__css-button{
+  text-align: end;
+}
 .material__js {
   color: #f0e7d6;
   background-color: #af9572;
   justify-self: center;
   width: 20%;
 }
+
 
 /* media */
 
