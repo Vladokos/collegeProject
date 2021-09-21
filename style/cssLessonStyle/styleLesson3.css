@@ -1,0 +1,40 @@
+.theory {
+  padding: 80px 0 35px 0;
+}
+.theory__inner {
+  color: #f0e7d6;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 35px;
+}
+.black::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 83.4%;
+  left: 19%;
+  border: 1.5px solid #fff;
+  background: #000;
+}
+.white::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 88.7%;
+  left: 19%;
+  background: #fff;
+}
+.font__size {
+  font-size: 16px;
+}
+.font_w100 {
+  font-weight: 100;
+}
+.font_w900 {
+  font-weight: 900;
+}
+.line__height{
+    line-height: 90px;
+}

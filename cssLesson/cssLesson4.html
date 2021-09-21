@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS learn</title>
+    <link rel="stylesheet" href="../style/resetStyle.css" />
+    <link rel="stylesheet" href="../style/blanks/hamburgerStyle.css" />
+    <link rel="stylesheet" href="../style/blanks/initialStyle.css" />
+    <link rel="stylesheet" href="../style/cssLessonStyle/styleLesson4.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__backButton">
+              <a href="../index.html" class="back__button"
+                ><img
+                  src="../image/button/arrow_back.svg"
+                  class="back__button-arrow"
+                  alt="back"
+              /></a>
+            </div>
+            <div class="header__numberLesson">Настройка стилей</div>
+            <div class="header__burgergMenu" id="header__burgergMenu">
+              <div class="burgerMenu__btn">
+                <div class="burgerMenu__btn2"></div>
+              </div>
+              <div class="burgerMenu__content" id="burgerMenu__content">
+                <ul>
+                  <li class="notActiveContent">
+                    <a href="./cssLesson.html">Вступление</a>
+                  </li>
+                  <li class="activeContent">Настройка стилей</li>
+                  <li class="notActiveContent">
+                    <a href="htmlLesson3.html">_</a>
+                  </li>
+                  <li class="notActiveContent">
+                    <a href="htmlLesson4.html">_</a>
+                  </li>
+                  <li class="notActiveContent">
+                    <a href="htmlLesson5.html">_</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+<!-- margin padding width heid backgound -->
+      <section class="theory">
+        <div class="container">
+          <div class="theory__inner">
+            <h2 class="hook" id="oreder">
+              <a href="#oreder"
+                ><img class="achor" src="../image/button/chain.svg" />Немного
+                практики</a
+              >
+            </h2>
+            <p>
+              Попробуйте попрактиковать добавление стилей в этом уроке для этого
+              подключите CSS и добавьте заголовк первого уровня
+            </p>
+            <p>
+              После этих действий зайдите в файл с расширением .css и введите
+              там <b>h1{color:green;} </b>
+            </p>
+            <p>
+              На экране вы увидите как поменялся цвет заголовка на зеленый.
+              Примерно так и работают каскадные таблицы стилей
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="code__redactor">
+        <iframe
+          src="https://codesandbox.io/embed/elastic-bush-6r4o0?fontsize=14&hidenavigation=1&theme=dark"
+          style="
+            width: 63%;
+            height: 500px;
+            border: 0;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 5em 0 0 25em;
+          "
+          title="elastic-bush-6r4o0"
+          allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+          sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+        ></iframe>
+      </section>
+
+      <section class="next__lesson">
+        <a href="./cssLesson3.html" class="next__button"
+          ><img
+            src="../image/button/arrow_next.svg"
+            class="next__button-arrow"
+            alt="next"
+          />
+        </a>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="aboutAuthor">Данные об авторе:</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="../js/hamburger.js" defer="defer"></script>
+  </body>
+</html>
