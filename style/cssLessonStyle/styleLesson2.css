@@ -1,0 +1,18 @@
+.theory {
+  padding: 80px 0 35px 0;
+}
+.theory__inner {
+  color: #f0e7d6;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 35px;
+}
+.explain {
+  padding: 80px 0 35px 0;
+}
+.explain__inner {
+  color: #f0e7d6;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 35px;
+}

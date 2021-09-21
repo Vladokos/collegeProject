@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../style/resetStyle.css" />
     <link rel="stylesheet" href="../style/blanks/hamburgerStyle.css" />
     <link rel="stylesheet" href="../style/blanks/initialStyle.css" />
-    <link rel="stylesheet" href="../style/cssLessonStyle/style.css" />
+    <link rel="stylesheet" href="../style/cssLessonStyle/styleLesson.css" />
   </head>
   <body>
     <div class="page">
@@ -23,25 +23,25 @@
                   alt="back"
               /></a>
             </div>
-            <div class="header__numberLesson">Первая практика</div>
+            <div class="header__numberLesson">Вступление</div>
             <div class="header__burgergMenu" id="header__burgergMenu">
               <div class="burgerMenu__btn">
                 <div class="burgerMenu__btn2"></div>
               </div>
               <div class="burgerMenu__content" id="burgerMenu__content">
                 <ul>
-                  <li class="activeContent">Первая практика</li>
+                  <li class="activeContent">Вступление</li>
                   <li class="notActiveContent">
-                    <a href="htmlLesson2.html">Скучаная теория</a>
+                    <a href="htmlLesson2.html">_</a>
                   </li>
                   <li class="notActiveContent">
-                    <a href="htmlLesson3.html">Немного теори и практики</a>
+                    <a href="htmlLesson3.html">_</a>
                   </li>
                   <li class="notActiveContent">
-                    <a href="htmlLesson4.html">Опять теория</a>
+                    <a href="htmlLesson4.html">_</a>
                   </li>
                   <li class="notActiveContent">
-                    <a href="htmlLesson5.html">Финальная практика</a>
+                    <a href="htmlLesson5.html">_</a>
                   </li>
                 </ul>
               </div>
@@ -49,45 +49,55 @@
           </div>
         </div>
       </header>
-      <section class="firstPractical">
+      <section class="theory">
         <div class="container">
-          <div class="firstPractical__inner">
-            <p>Вам передали задание из другого отдела в нем сказано:</p>
-            <p>
-              Вам нужно добавить заголовок первого уровня а после задать ему
-              стиль <b>color: green;</b>
-            </p>
-            <p>
-              Для того чтобы выполнить это задание вам нужно в
-              <b>HTML</b> добавить после тега &lt;meta charset="UTF-8" /&gt;
-              нужно добавит ссылку на CSS она будет такой &lt;link
-              href="./src/styles.css" /&gt; заголовок первого уровня после вам
-              нужно открыть <b>CSS</b> и добавить там <b>h1{color:green;}</b>
-            </p>
-            <p>из уроков по HTML вы знаете как узнать где какие файлы лежат</p>
+          <div class="theory__inner">
+            <div class="theory__aboutCss">
+              <h2 class="hook" id="whatCSS">
+                <a href="#whatCSS"
+                  ><img class="achor" src="../image/button/chain.svg" />Что
+                  такое CSS?</a
+                >
+              </h2>
+              <p>
+                Если вам вдруг не нравяться цвет текста в HTML или вам хочется
+                поменять задний фон то для этого придумали CSS
+              </p>
+              <p>
+                CSS (Cascading Style Sheets) или же каскадные таблицы стилей.
+                Впервы о них упомянул Хокон Виум Ли в 1994 году, а были приняты
+                W3C 17 декабря 1996.
+              </p>
+            </div>
+            <div class="theory__connectCSS">
+              <h2 class="hook" id="howStartWork">
+                <a href="#howStartWork"
+                  ><img class="achor" src="../image/button/chain.svg" />Как
+                  начать с ним работать
+                </a>
+              </h2>
+              <p>
+                Для того чтобы совместить работу HTML и CSS В HTML нужно
+                прописать данный тег
+                <b>&lt;link rel="stylesheet" href="ссылка на CSS"&gt; </b>
+                после тега
+                <b>&lt;meta charset="UTF-8" /&gt; </b>
+              </p>
+              <p>
+                <b> rel="stylesheet" </b>- означает что мы добавляем таблицы
+                стилей на сайт
+              </p>
+              <p>
+                После того как был добавлен CSS на сайт можно переходить к
+                настройки стилей в CSS файле и они будут применятся в HTML
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="code__redactor">
-        <iframe
-          src="https://codesandbox.io/embed/elastic-bush-6r4o0?fontsize=14&hidenavigation=1&theme=dark"
-          style="
-            width: 63%;
-            height: 500px;
-            border: 0;
-            border-radius: 4px;
-            overflow: hidden;
-            margin: 5em 0 0 25em;
-          "
-          title="elastic-bush-6r4o0"
-          allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-          sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-        ></iframe>
-      </section>
-
       <section class="next__lesson">
-        <a href="./htmlLesson2.html" class="next__button"
+        <a href="./cssLesson2.html" class="next__button"
           ><img
             src="../image/button/arrow_next.svg"
             class="next__button-arrow"

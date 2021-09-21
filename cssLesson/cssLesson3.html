@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS learn</title>
+    <link rel="stylesheet" href="../style/resetStyle.css" />
+    <link rel="stylesheet" href="../style/blanks/hamburgerStyle.css" />
+    <link rel="stylesheet" href="../style/blanks/initialStyle.css" />
+    <link rel="stylesheet" href="../style/cssLessonStyle/styleLesson2.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__backButton">
+              <a href="../index.html" class="back__button"
+                ><img
+                  src="../image/button/arrow_back.svg"
+                  class="back__button-arrow"
+                  alt="back"
+              /></a>
+            </div>
+            <div class="header__numberLesson">Теория</div>
+            <div class="header__burgergMenu" id="header__burgergMenu">
+              <div class="burgerMenu__btn">
+                <div class="burgerMenu__btn2"></div>
+              </div>
+              <div class="burgerMenu__content" id="burgerMenu__content">
+                <ul>
+                  <li class="notActiveContent">
+                    <a href="./cssLesson.html">Вступление</a>
+                  </li>
+                  <li class="activeContent">Настройка стилей</li>
+                  <li class="notActiveContent">
+                    <a href="htmlLesson3.html">Готовьтесь снова теория</a>
+                  </li>
+                  <li class="notActiveContent">
+                    <a href="htmlLesson4.html">_</a>
+                  </li>
+                  <li class="notActiveContent">
+                    <a href="htmlLesson5.html">_</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="theory">
+        <div class="container">
+          <div class="theory__inner">
+            <h2 class="hook" id="oreder">
+              <a href="#oreder"
+                ><img
+                  class="achor"
+                  src="../image/button/chain.svg"
+                />Редактирование текста</a
+              >
+            </h2>
+            <p>
+              Иногда стандартные стили текста в HTML не подходят к стилю сайта и
+              на помощь приходит опять CSS
+            </p>
+            <p>
+              В CSS существует множество свойств для редактирвоания текста от
+              изменения его цвета до изменения его высоты
+            </p>
+            <p>
+                НИже будут расписаны теги для изменении стилей текста
+            </p>
+            <ul>
+                <li></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="explain">
+        <div class="container">
+          <div class="explain__inner">
+            <h2 class="hook" id="explain__oreder">
+              <a href="#explain__oreder"
+                ><img class="achor" src="../image/button/chain.svg" />Разбор
+                сделанного</a
+              >
+            </h2>
+            <p>
+              В этой работе вы подклчюили стили CSS к HTML, но поскольку
+              изначально в фалйе со стилями ничего не было нечего на сайте не
+              изменилось, но после того как вы добавили заголовок первого уровня
+              и в стилях задали ему цвет он стал зеленым
+            </p>
+            <p>
+              в CSS вы написали h1{color:green;} h1 - это селектор то у чего CSS
+              будет менять стили селектором может быть и div,footer,heade и так
+              далее
+            </p>
+            <p>
+              color - это свойство которые вы задаете данному селектору в данном
+              случаем Вы изменили цвет у текста, но в CSS можно менять
+              ширину(width), высоту(height) и так далее
+            </p>
+            <p>
+              green - это значение свойства, но у каждого свойства есть свои
+              значение так что не получиться при изменении ширины задать цвет
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="next__lesson">
+        <a href="./htmlLesson2.html" class="next__button"
+          ><img
+            src="../image/button/arrow_next.svg"
+            class="next__button-arrow"
+            alt="next"
+          />
+        </a>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="aboutAuthor">Данные об авторе:</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../js/hamburger.js" defer="defer"></script>
+  </body>
+</html>
