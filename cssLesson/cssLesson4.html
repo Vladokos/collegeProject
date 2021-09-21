@@ -23,7 +23,7 @@
                   alt="back"
               /></a>
             </div>
-            <div class="header__numberLesson">Настройка стилей</div>
+            <div class="header__numberLesson"></div>
             <div class="header__burgergMenu" id="header__burgergMenu">
               <div class="burgerMenu__btn">
                 <div class="burgerMenu__btn2"></div>
@@ -49,33 +49,82 @@
           </div>
         </div>
       </header>
-<!-- margin padding width heid backgound -->
+      <!-- margin padding width height backgound -->
       <section class="theory">
         <div class="container">
           <div class="theory__inner">
+            <div class="try">
+              <h2 class="hook" id="oreder">
+                <a href="#oreder"
+                  ><img class="achor" src="../image/button/chain.svg" />Ширина и
+                  высота</a
+                >
+              </h2>
+              <p>
+                Если вдруг вам понадобиться изменить ширину и/или высоту текста,
+                изображения или чего-то ещё то тут приходят на помощь свойства
+                width и height
+              </p>
+              <p>
+                Значения для свойства width и height задаются таким образом
+                width: значение px ; height: значение px;
+              </p>
+              <p>Попробуйте несколько раз нажать на этот квадрат снизу</p>
+              <p>
+                <img
+                  id="square__button"
+                  class="square__button"
+                  src="../image/button/square.svg"
+                  alt="square"
+                />
+              </p>
+              <p>
+                У этого квадрата уменьшается ширина из-за чего он становиться
+                меньше
+              </p>
+            </div>
+            <!--  -->
             <h2 class="hook" id="oreder">
               <a href="#oreder"
-                ><img class="achor" src="../image/button/chain.svg" />Немного
-                практики</a
+                ><img class="achor" src="../image/button/chain.svg" />отступы</a
               >
             </h2>
             <p>
-              Попробуйте попрактиковать добавление стилей в этом уроке для этого
-              подключите CSS и добавьте заголовк первого уровня
+              Иногда разные блоки на сайте стоят слишком близко друг к друг и
+              для того чтобы их отталкнуть используют отступы
+            </p>
+            <p>Есть два типа отступа padding и margin</p>
+            <p>
+              padding: число px(верхний отступ) число px(отступ справа) число
+              px(нижний отступ) число px(отступ слева) - задает внутренние
+              отсупы увеличивая его границы.
             </p>
             <p>
-              После этих действий зайдите в файл с расширением .css и введите
-              там <b>h1{color:green;} </b>
+              Для того чтобы легче было запомнить с какой стороны какой отступ
+              есть один способ значения идут по часовой стрелке то есть верхний
+              отступ - 12 часов, отступ справа - 3 часа, нижний отступ - 6
+              часов, отступ слева - 9 часов.
             </p>
             <p>
-              На экране вы увидите как поменялся цвет заголовка на зеленый.
-              Примерно так и работают каскадные таблицы стилей
+              margin: число px(верхний отступ) число px(отступ справа) число
+              px(нижний отступ) число px(отступ слева) - задает внешние значение
+              отталкивая контент и смещаю в одну из сторон от другого контента
             </p>
+            <p>
+                Попробуйте понажимать на эти кнопки и посмотреть на результат
+            </p>
+            <p>
+                <button id="padding__button" class="padding__button">Padding: 75px 75px 75px 75px</button>
+                <button id="margin__button" class="margin__button">Margin: 75px 75px 75px 75px</button>
+            </p>
+            <div id="ident__examples" class="ident__examples">
+
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="code__redactor">
+      <!-- <section class="code__redactor">
         <iframe
           src="https://codesandbox.io/embed/elastic-bush-6r4o0?fontsize=14&hidenavigation=1&theme=dark"
           style="
@@ -90,7 +139,7 @@
           allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
           sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
         ></iframe>
-      </section>
+      </section> -->
 
       <section class="next__lesson">
         <a href="./cssLesson3.html" class="next__button"
@@ -111,5 +160,6 @@
       </footer>
     </div>
     <script src="../js/hamburger.js" defer="defer"></script>
+    <script src="../js/cssLesson/examples.js" defer="defer"></script>
   </body>
 </html>
