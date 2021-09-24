@@ -23,7 +23,7 @@
                   alt="back"
               /></a>
             </div>
-            <div class="header__numberLesson"></div>
+            <div class="header__numberLesson">Чучть теори и практика</div>
             <div class="header__burgergMenu" id="header__burgergMenu">
               <div class="burgerMenu__btn">
                 <div class="burgerMenu__btn2"></div>
@@ -59,136 +59,14 @@
                   высота</a
                 >
               </h2>
-              <p>
-                Если вдруг вам понадобиться изменить ширину и/или высоту текста,
-                изображения или чего-то ещё то тут приходят на помощь свойства
-                width и height
-              </p>
-              <p>
-                Значения для свойства width и height задаются таким образом
-                width: значение px ; height: значение px;
-              </p>
-              <p>Попробуйте несколько раз нажать на этот квадрат снизу</p>
-              <p>
-                <img
-                  id="square__button"
-                  class="square__button"
-                  src="../image/button/square.svg"
-                  alt="square"
-                />
-              </p>
-              <p>
-                У этого квадрата уменьшается ширина из-за чего он становиться
-                меньше
-              </p>
-            </div>
-
-            <div class="paddingMargin">
-              <h2 class="hook" id="padding__margin">
-                <a href="#padding__margin"
-                  ><img
-                    class="achor"
-                    src="../image/button/chain.svg"
-                  />Отступы</a
-                >
-              </h2>
-              <p>
-                Иногда разные блоки на сайте стоят слишком близко друг к друг и
-                для того чтобы их отталкнуть используют отступы
-              </p>
-              <p>Есть два типа отступа padding и margin</p>
-              <p>
-                padding: число px(верхний отступ) число px(отступ справа) число
-                px(нижний отступ) число px(отступ слева) - задает внутренние
-                отсупы увеличивая его границы.
-              </p>
-              <p>
-                Для того чтобы легче было запомнить с какой стороны какой отступ
-                есть один способ значения идут по часовой стрелке то есть
-                верхний отступ - 12 часов, отступ справа - 3 часа, нижний отступ
-                - 6 часов, отступ слева - 9 часов.
-              </p>
-              <p>
-                margin: число px(верхний отступ) число px(отступ справа) число
-                px(нижний отступ) число px(отступ слева) - задает внешние
-                значение отталкивая контент и смещаю в одну из сторон от другого
-                контента
-              </p>
-              <p>
-                Попробуйте понажимать на эти кнопки и посмотреть на результат
-              </p>
-              <p>
-                <button id="padding__button" class="padding__button">
-                  Padding: 75px 75px 75px 75px
-                </button>
-                <button id="margin__button" class="margin__button">
-                  Margin: 75px 75px 75px 75px
-                </button>
-              </p>
-              <div id="ident__examples" class="ident__examples"></div>
-            </div>
-            <div class="background">
-              <h3 class="hook" id="bg">
-                <a href="#bg"
-                  ><img class="achor" src="../image/button/chain.svg" />Задний
-                  фон</a
-                >
-              </h3>
-              <p>
-                Бывают случаии когда надо изменить фон для этого создали
-                селектор backgound, а точнее backgound-color
-              </p>
-              <p>
-                Селектор backgound оно не одно у него есть множетсво
-                разновидностей например color,image,size,position,repeat
-              </p>
-              <p>Давайте разебремся для чего какой подходит</p>
-              <ul>
-                <li>backgound-color: #hex - задет цвет заднему фону</li>
-                <li>
-                  backgound-image: url("ссылка на изображение") - ставит на
-                  задний фон картинку
-                </li>
-                <li>
-                  backgound-size: auto(автоматичиски маштабирует картинку)/
-                  contain(масштабирует картинку так, чтобы она максимально
-                  накрыла собой весь блок)/ cover(масштабирует изображение как
-                  можно больше c сохранением пропорций изображения) - позволяет
-                  задавать размер картинки
-                </li>
-                <li>
-                  backgound-position: top(изображение будет
-                  сверху),bottom(изображение будет снизу), left(изображение
-                  будет слева), right(изображение будет справ),
-                  center(изображение будет в центре) - устанавливает начальную
-                  позицию картинки
-                </li>
-                <li>
-                  backgound-repeat: repeat(изоброжение будет повторяться),
-                  space(изображение будет повторяться с отступами друг от друга)
-                  no-repeat(без повторений) - будет ли повторяться изображение
-                  для заполнение пустого пространства
-                </li>
-                <li>
-                  backgound: свойства - можно использовать один Селектор для
-                  задания нескольких свойств(размера,позиции)
-                </li>
-              </ul>
-              <p>
-                Вот пример background-image:url("ссылка на картинку") +
-                background-size: contain; background-repeat: no-repeat; и
-                backgound-color: olive;
-              </p>
-              <div class="backgound__examples">
-                <div class="bgImage__example"></div>
-                <div class="bgColor__example"></div>
-              </div>
+              <!-- about class and add code redactor + order -->
+              
             </div>
           </div>
         </div>
       </section>
 
-      <!-- <section class="code__redactor">
+      <section class="code__redactor">
         <iframe
           src="https://codesandbox.io/embed/elastic-bush-6r4o0?fontsize=14&hidenavigation=1&theme=dark"
           style="
@@ -203,7 +81,7 @@
           allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
           sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
         ></iframe>
-      </section> -->
+      </section>
 
       <section class="next__lesson">
         <a href="./cssLesson3.html" class="next__button"
