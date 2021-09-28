@@ -1,0 +1,18 @@
+.page {
+  overflow: visible;
+}
+
+.block {
+  width: 100px;
+  height: 100px;
+  float: left;
+  background-color: #f0e7d6;
+  cursor: pointer;
+}
+.block.right {
+  float: right;
+}
+.positioning {
+  height: 750px;
+}
+

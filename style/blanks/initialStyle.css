@@ -10,6 +10,11 @@ h2 {
   font-size: 32px;
   margin-bottom: 20px;
 }
+h3 {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
 p {
   margin: 0 0 30px 0;
 }
@@ -42,6 +47,18 @@ p {
   text-align: center;
   font-size: 22px;
 }
+.theory,
+.task {
+  padding: 80px 0 35px 0;
+}
+.theory__inner,
+.task {
+  color: #f0e7d6;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 35px;
+}
+
 .achor {
   visibility: hidden;
   width: 2.5%;
