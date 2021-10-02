@@ -1,0 +1,29 @@
+.exampleDf-block {
+  display: block;
+}
+.exampleDf-block.df {
+  display: flex;
+}
+.exampleDf-item {
+  width: 100px;
+  height: 100px;
+  background-color: #3f2f22;
+  text-align: center;
+  padding: 33px;
+  margin-right: 20px;
+}
+.exampleDf-item:nth-child(2) {
+  background-color: #959072;
+}
+.exampleDf-item:last-child {
+  background-color: #443f2b;
+}
+.achor__subtitle {
+  visibility: hidden;
+  width: 2.5%;
+  margin-top: 3px;
+  float: left;
+}
+.subtitle:hover .achor__subtitle {
+  visibility: visible;
+}

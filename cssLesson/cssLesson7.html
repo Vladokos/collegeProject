@@ -106,107 +106,101 @@
                   </li>
                 </ul>
               </div>
-              <div class="positioning">
-                <h3 class="hook" id="pos">
-                  <a href="#pos"
-                    ><img
-                      class="achor"
-                      src="../image/button/chain.svg"
-                    />Position
-                  </a>
-                </h3>
-                <p>
-                  Position - задает способ позиционирования элемента
-                  относительно окна браузера или других объектов на веб-странице
-                </p>
-                <p>У своства position есть 7 значений:</p>
-                <ul>
-                  <li>static - элементы отображаются как обычно</li>
-                  <li>
-                    relative - положение элемента устанавливается относительно
-                    его исходного места. добавление свойств top, left,right и
-                    bottom меняет его расположение.
-                  </li>
-                  <li>
-                    absolute - блок вынимаеться из потока документа(как-будто
-                    парит в воздухе) и становиться независим от изначальной
-                    позиции. добавление свойств top, left,right и bottom меняет
-                    его расположение.
-                  </li>
-                  <li>
-                    sticky - делает блок липким который приклеивается к границе
-                    окна страницы и будет липким до того момента пока граница
-                    родителя не закончится
-                  </li>
-                  <li>
-                    fixed - фиксированное позиционирование аналогично
-                    абсолютному позиционированию, с отличием в том, что он
-                    привязывается к указанной точке на экране свойствами left,
-                    top, right и bottom
-                  </li>
-                  <li>initial - значение по умолчанию</li>
-                  <li>inherit - наследует позиционирование от родителя</li>
-                </ul>
-                <p>
-                  Для примера бургер меню(3 полоски на шоколадном фоне)
-                  использует абсолютное позиционирование( position: absolute;)
-                </p>
+            </div>
+            <div class="positioning">
+              <h3 class="hook" id="pos">
+                <a href="#pos"
+                  ><img class="achor" src="../image/button/chain.svg" />Position
+                </a>
+              </h3>
+              <p>
+                Position - задает способ позиционирования элемента относительно
+                окна браузера или других объектов на веб-странице
+              </p>
+              <p>У своства position есть 7 значений:</p>
+              <ul>
+                <li>static - элементы отображаются как обычно</li>
+                <li>
+                  relative - положение элемента устанавливается относительно его
+                  исходного места. добавление свойств top, left,right и bottom
+                  меняет его расположение.
+                </li>
+                <li>
+                  absolute - блок вынимаеться из потока документа(как-будто
+                  парит в воздухе) и становиться независим от изначальной
+                  позиции. добавление свойств top, left,right и bottom меняет
+                  его расположение.
+                </li>
+                <li>
+                  sticky - делает блок липким который приклеивается к границе
+                  окна страницы и будет липким до того момента пока граница
+                  родителя не закончится
+                </li>
+                <li>
+                  fixed - фиксированное позиционирование аналогично абсолютному
+                  позиционированию, с отличием в том, что он привязывается к
+                  указанной точке на экране свойствами left, top, right и bottom
+                </li>
+                <li>initial - значение по умолчанию</li>
+                <li>inherit - наследует позиционирование от родителя</li>
+              </ul>
+              <p>
+                Для примера бургер меню(3 полоски на шоколадном фоне) использует
+                абсолютное позиционирование( position: absolute;)
+              </p>
+            </div>
+            <div class="positingCros">
+              <h3 class="hook" id="pos">
+                <a href="#pos"
+                  ><img class="achor" src="../image/button/chain.svg" />Position
+                </a>
+              </h3>
+              <p>
+                Данные свойства используются вместе с position которое имет
+                значение отличное от static без него они будут бесполезны
+              </p>
+              <p>
+                Чтобы задать смещение с помощью этих свойств надо написать
+                <br />
+                top или bottom или left или right: число px
+                <br />
+                также эти свойства можно использовать вместе для одного элемента
+              </p>
+            </div>
+            <div class="listBlock">
+              <h3 class="hook" id="zInd">
+                <a href="#zInd"
+                  ><img class="achor" src="../image/button/chain.svg" />
+                  z-index
+                </a>
+              </h3>
+              <p>
+                z-index - в CSS каждый блок имеет позицию в трех измерениях. В
+                дополнение к горизонтальному и вертикальному положению, блоки
+                выкладываются вдоль оси Z друг над другом.
+              </p>
+              <p>
+                Для того чтобы поменять расположение блока чтобы один был над
+                другим надо написать свойтсво
+                <br />
+                z-index: число(от -&#8734; до +&#8734;)
+              </p>
+              <div class="firstPos">
+                <div class="secondPos"></div>
               </div>
-              <div class="positingCros">
-                <h3 class="hook" id="cross">
-                  <a href="#cross"
-                    ><img
-                      class="achor"
-                      src="../image/button/chain.svg"
-                    />top,bottom,lef,right
-                  </a>
-                </h3>
-                <p>
-                  Данные свойства используются вместе с position которое имет
-                  значение отличное от static без него они будут бесполезны
-                </p>
-                <p>
-                  Чтобы задать смещение с помощью этих свойств надо написать
-                  <br />
-                  top или bottom или left или right: число px
-                  <br />
-                  также эти свойства можно использовать вместе для одного
-                  элемента
-                </p>
-              </div>
-              <div class="listBlock">
-                <h3 class="hook" id="zInd">
-                  <a href="#zInd"
-                    ><img class="achor" src="../image/button/chain.svg" />
-                    z-index
-                  </a>
-                </h3>
-                <p>
-                  z-index - в CSS каждый блок имеет позицию в трех измерениях. В
-                  дополнение к горизонтальному и вертикальному положению, блоки
-                  выкладываются вдоль оси Z друг над другом.
-                </p>
-                <p>
-                  Для того чтобы поменять расположение блока чтобы один был над
-                  другим надо написать свойтсво
-                  <br/>
-                  z-index: число(от -&#8734; до +&#8734;)
-                </p>
-                <div class="firstPos">
-                  <div class="secondPos">
-
-                  </div>
-                </div>
-                <p>
-                  Как вы видите один кубик находиться поверх другого 
-                </p>
-              </div>
+              <p>Как вы видите один кубик находиться поверх другого</p>
+              <p>Ниже вы можете попробовать это всё на деле</p>
+              <p>
+                Например вы можете создать блок и вложить в него еще один блок
+                задать им классы внутри них написать текст а после подключить
+                стили и попробовать поменять им позиционирование
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- <section class="code__redactor">
+      <section class="code__redactor">
         <iframe
           src="https://codesandbox.io/embed/elastic-bush-6r4o0?fontsize=14&hidenavigation=1&theme=dark"
           style="
@@ -221,7 +215,7 @@
           allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
           sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
         ></iframe>
-      </section> -->
+      </section>
 
       <section class="next__lesson">
         <a href="./cssLesson8.html" class="next__button"

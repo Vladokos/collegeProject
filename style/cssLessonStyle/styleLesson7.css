@@ -1,7 +1,16 @@
 .page {
   overflow: visible;
 }
-
+.whatPost,
+.floatPos,
+.positioning,
+.positingCros,
+.listBlock {
+  padding: 0 0 35px 0;
+}
+.whatPost{
+  padding-top: 80px;
+}
 .block {
   width: 100px;
   height: 100px;
@@ -11,12 +20,6 @@
 }
 .block.right {
   float: right;
-}
-.positioning {
-  height: 750px;
-}
-.positingCros {
-  padding: 80px 0 35px 0;
 }
 .firstPos {
   padding: 25px;

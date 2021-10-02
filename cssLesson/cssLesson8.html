@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS learn</title>
+    <link rel="stylesheet" href="../style/resetStyle.css" />
+    <link rel="stylesheet" href="../style/blanks/hamburgerStyle.css" />
+    <link rel="stylesheet" href="../style/blanks/initialStyle.css" />
+    <link rel="stylesheet" href="../style/cssLessonStyle/styleLesson8.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__backButton">
+              <a href="../index.html" class="back__button"
+                ><img
+                  src="../image/button/arrow_back.svg"
+                  class="back__button-arrow"
+                  alt="back"
+              /></a>
+            </div>
+            <div class="header__numberLesson">Flexbox</div>
+            <div class="header__burgergMenu" id="header__burgergMenu">
+              <div class="burgerMenu__btn">
+                <div class="burgerMenu__btn2"></div>
+              </div>
+              <div class="burgerMenu__content" id="burgerMenu__content">
+                <ul>
+                  <li class="notActiveContent">
+                    <a href="./cssLesson.html">Вступление</a>
+                  </li>
+                  <li class="activeContent">Настройка стилей</li>
+                  <li class="notActiveContent">
+                    <a href="htmlLesson3.html">_</a>
+                  </li>
+                  <li class="notActiveContent">
+                    <a href="htmlLesson4.html">_</a>
+                  </li>
+                  <li class="notActiveContent">
+                    <a href="htmlLesson5.html">_</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="theory">
+        <div class="container">
+          <div class="theory__inner">
+            <div class="whatFlex">
+              <h2 class="hook" id="whatFlex">
+                <a href="#whatFlex"
+                  ><img class="achor" src="../image/button/chain.svg" />Что
+                  такое Flexbox?
+                </a>
+              </h2>
+              <p>
+                Flexbox - это технология для создания сложных гибких макетов за
+                счёт правильного размещения элементов на странице.
+              </p>
+            </div>
+            <div class="howUseFlex">
+              <h2 class="hook" id="whatFlex">
+                <a href="#whatFlex"
+                  ><img class="achor" src="../image/button/chain.svg" />Как
+                  использовать Flexbox?
+                </a>
+              </h2>
+              <p>
+                Для того чтобы использовать Flexbox в css в классе нужно
+                приписать свойство display:flex;
+              </p>
+              <p>
+                Нажмите на любой из 3 кубиков или рядом с ними чтобы увидеть
+                результат
+              </p>
+              <p>
+                Текущее состояние: <br />
+                <span class="stateDf" id="stateDf">display:block;</span>
+              </p>
+              <div class="exampleDf">
+                <ul class="exampleDf-block" id="exampleDf-block">
+                  <li class="exampleDf-item" id="exampleDf-item">1</li>
+                  <li class="exampleDf-item" id="exampleDf-item">2</li>
+                  <li class="exampleDf-item" id="exampleDf-item">3</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <h2 class="hook" id="allFlex">
+                <a href="#allFlex"
+                  ><img class="achor" src="../image/button/chain.svg" />Все
+                  остальные свойства Flexbox
+                </a>
+              </h2>
+              <div></div>
+              <a href="#flexDc" class="subtitle"
+                  ><img class="achor__subtitle" src="../image/button/chain.svg" />Все
+                  остальные свойства Flexbox
+                </a>
+              <p>
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="code__redactor">
+        <iframe
+          src="https://codesandbox.io/embed/elastic-bush-6r4o0?fontsize=14&hidenavigation=1&theme=dark"
+          style="
+            width: 63%;
+            height: 500px;
+            border: 0;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 5em 0 0 25em;
+          "
+          title="elastic-bush-6r4o0"
+          allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+          sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+        ></iframe>
+      </section> -->
+
+      <section class="next__lesson">
+        <a href="./cssLesson9.html" class="next__button"
+          ><img
+            src="../image/button/arrow_next.svg"
+            class="next__button-arrow"
+            alt="next"
+          />
+        </a>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="aboutAuthor">Данные об авторе:</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="../js/cssLesson/exampleFlex.js" defer="defer"></script>
+    <script src="../js/hamburger.js" defer="defer"></script>
+  </body>
+</html>
