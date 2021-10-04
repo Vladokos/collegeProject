@@ -91,21 +91,81 @@
                 </ul>
               </div>
             </div>
-            <div>
-              <h2 class="hook" id="allFlex">
-                <a href="#allFlex"
-                  ><img class="achor" src="../image/button/chain.svg" />Все
-                  остальные свойства Flexbox
-                </a>
-              </h2>
-              <div></div>
+            <div class="flex-direction">
+              <!-- style -->
               <a href="#flexDc" class="subtitle"
-                  ><img class="achor__subtitle" src="../image/button/chain.svg" />Все
-                  остальные свойства Flexbox
-                </a>
+                ><img class="achor__subtitle" src="../image/button/chain.svg" />
+                flex-direction
+              </a>
               <p>
-
+                У flex-контейнера есть две оси: главная и перпендикулярная ей.
+                По умолчанию все предметы располагаются вдоль главной оси —
+                слева направо. Именно поэтому блоки в предыдущем примере
+                выстроились в линию, когда мы применили display: flex. А вот
+                flex-direction позволяет вращать главную ось.
               </p>
+              <p>У свойства flex-direction елсть несколько значенией</p>
+              <ul>
+                <li>flex-direction: row; - сдвигает все элементы в строку</li>
+                <li>
+                  flex-direction: column; - сдвигает все элементы в столбец
+                </li>
+                <li>flex-direction: row-reverse; - переворачивает строку</li>
+                <li>
+                  flex-direction: column-reverse; - переворачивает столбец
+                </li>
+              </ul>
+              <!-- need add -->
+              <p>Примеры:</p>
+              <div class="ExamplesDc">
+                <div class="ExampleDc__normal">
+                  <ul
+                    class="exampleDc__normal-block"
+                    id="exampleDc__normal-block"
+                  >
+                    <li class="exampleDc-item" id="exampleDc-item">1</li>
+                    <li class="exampleDc-item" id="exampleDc-item">2</li>
+                    <li class="exampleDc-item" id="exampleDc-item">3</li>
+                  </ul>
+                </div>
+                <div class="ExampleDc__reverse">
+                  <ul
+                    class="exampleDc__reverse-block"
+                    id="exampleDc__reverse-block"
+                  >
+                    <li class="exampleDf-item" id="exampleDf-item">1</li>
+                    <li class="exampleDf-item" id="exampleDf-item">2</li>
+                    <li class="exampleDf-item" id="exampleDf-item">3</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="justify-content">
+              <a href="#flexDc" class="subtitle"
+                ><img class="achor__subtitle" src="../image/button/chain.svg" />
+                justify-content
+              </a>
+              <p>
+                justify-content- отвечает за выравнивание элементов по главной
+                оси
+              </p>
+              <p>У свойства justify-content елсть несколько значенией</p>
+              <ul>
+                <li>flex-start - распологает элементы в начале строки</li>
+                <li>flex-end - распологает элементы в конце строки</li>
+                <li>center - распологает элементы по центру строки</li>
+                <li>
+                  space-between - элементы равномерно распределяются по всей
+                  строке.Первый и последний элемент прижимаются к
+                  соответствующим краям контейнера.
+                </li>
+                <li>
+                  space-around - элементы равномерно распределяются по всей
+                  строке. Пустое пространство перед первым и после последнего
+                  элементов равно половине пространства между двумя соседними
+                  элементами.
+                </li>
+              </ul>
             </div>
           </div>
         </div>

@@ -18,12 +18,17 @@
 .exampleDf-item:last-child {
   background-color: #443f2b;
 }
+.subtitle{
+    font-weight: 600;
+}
 .achor__subtitle {
   visibility: hidden;
+  margin-left: 20px;
   width: 2.5%;
   margin-top: 3px;
   float: left;
 }
 .subtitle:hover .achor__subtitle {
   visibility: visible;
+  
 }
