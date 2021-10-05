@@ -85,18 +85,14 @@
               </p>
               <div class="exampleDf">
                 <ul class="exampleDf-block" id="exampleDf-block">
-                  <li class="exampleDf-item" id="exampleDf-item">1</li>
-                  <li class="exampleDf-item" id="exampleDf-item">2</li>
-                  <li class="exampleDf-item" id="exampleDf-item">3</li>
+                  <li class="examples-item">1</li>
+                  <li class="examples-item">2</li>
+                  <li class="examples-item">3</li>
                 </ul>
               </div>
             </div>
             <div class="flex-direction">
-              <!-- style -->
-              <a href="#flexDc" class="subtitle"
-                ><img class="achor__subtitle" src="../image/button/chain.svg" />
-                flex-direction
-              </a>
+              <div class="subtitle">flex-direction</div>
               <p>
                 У flex-контейнера есть две оси: главная и перпендикулярная ей.
                 По умолчанию все предметы располагаются вдоль главной оси —
@@ -115,41 +111,47 @@
                   flex-direction: column-reverse; - переворачивает столбец
                 </li>
               </ul>
-              <!-- need add -->
               <p>Примеры:</p>
               <div class="ExamplesDc">
+                <p>
+                  Текущее состояние: <br />
+                  <span class="stateDc" id="stateDc">flex-direction: row;</span>
+                </p>
                 <div class="ExampleDc__normal">
                   <ul
                     class="exampleDc__normal-block"
                     id="exampleDc__normal-block"
                   >
-                    <li class="exampleDc-item" id="exampleDc-item">1</li>
-                    <li class="exampleDc-item" id="exampleDc-item">2</li>
-                    <li class="exampleDc-item" id="exampleDc-item">3</li>
+                    <li class="examples-item">1</li>
+                    <li class="examples-item">2</li>
+                    <li class="examples-item">3</li>
                   </ul>
                 </div>
+                <p>
+                  Текущее состояние:<br />
+                  <span class="stateDc__reverse" id="stateDc__reverse"
+                    >flex-direction: row-reverse;</span
+                  >
+                </p>
                 <div class="ExampleDc__reverse">
                   <ul
                     class="exampleDc__reverse-block"
                     id="exampleDc__reverse-block"
                   >
-                    <li class="exampleDf-item" id="exampleDf-item">1</li>
-                    <li class="exampleDf-item" id="exampleDf-item">2</li>
-                    <li class="exampleDf-item" id="exampleDf-item">3</li>
+                    <li class="examples-item">1</li>
+                    <li class="examples-item">2</li>
+                    <li class="examples-item">3</li>
                   </ul>
                 </div>
               </div>
             </div>
             <div class="justify-content">
-              <a href="#flexDc" class="subtitle"
-                ><img class="achor__subtitle" src="../image/button/chain.svg" />
-                justify-content
-              </a>
+              <div class="subtitle">justify-content</div>
               <p>
-                justify-content- отвечает за выравнивание элементов по главной
+                justify-content - отвечает за выравнивание элементов по главной
                 оси
               </p>
-              <p>У свойства justify-content елсть несколько значенией</p>
+              <p>У свойства justify-content есть несколько значенией</p>
               <ul>
                 <li>flex-start - распологает элементы в начале строки</li>
                 <li>flex-end - распологает элементы в конце строки</li>
@@ -166,12 +168,66 @@
                   элементами.
                 </li>
               </ul>
+              <p>Примеры:</p>
+              <p>
+                Текущее состояние:<br />
+                <span class="stateJuc" id="stateJuc">
+                  justify-content: flex-start;</span
+                >
+              </p>
+              <div class="ExamplesJuC">
+                <ul class="examplesJuC-block" id="examplesJuC-block">
+                  <li class="examples-item">1</li>
+                  <li class="examples-item">2</li>
+                  <li class="examples-item">3</li>
+                </ul>
+              </div>
+            </div>
+            <div class="align-items">
+              <div class="subtitle">align-items</div>
+              <p>
+                align-items - Если justify-content работает с главной осью, то
+                align-items работает с осью, перпендикулярной главной оси.
+              </p>
+              <p>У свойства align-items есть 5 значенией</p>
+              <ul>
+                <li>
+                  flex-start - элементы выравниваются относительно верхнего края
+                  (начала) контейнера.
+                </li>
+                <li>
+                  flex-end - элементы выравниваются относительно нижнего края
+                  (конца) контейнера.
+                </li>
+                <li>center - элементы выравниваются по центру контейнера.</li>
+                <li>
+                  stretch - элементы растягиваются, занимая все пространство
+                  контейнера по высоте.
+                </li>
+                <li>baseline - элементы выравниваются по базовой линии.</li>
+              </ul>
+              <p>
+                Текущее состояние:<br />
+                <span class="stateAligItm" id="stateAligItm">
+                  align-items: flex-start;</span
+                >
+              </p>
+              <div class="ExamplesAlignI">
+                <ul class="examplesAlignI-block" id="examplesAlignI-block">
+                  <li class="examplesAi-item">1</li>
+                  <li class="examplesAi-item">2</li>
+                  <li class="examplesAi-item">3</li>
+                </ul>
+              </div>
+              <p>
+                Можете вручную прпробовать использовать эти данные
+              </p>
             </div>
           </div>
         </div>
       </section>
-
-      <!-- <section class="code__redactor">
+<!-- переделать что в js и что сверху написал -->
+      <section class="code__redactor">
         <iframe
           src="https://codesandbox.io/embed/elastic-bush-6r4o0?fontsize=14&hidenavigation=1&theme=dark"
           style="
@@ -186,7 +242,7 @@
           allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
           sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
         ></iframe>
-      </section> -->
+      </section>
 
       <section class="next__lesson">
         <a href="./cssLesson9.html" class="next__button"

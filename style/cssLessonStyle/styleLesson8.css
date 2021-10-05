@@ -1,10 +1,12 @@
 .exampleDf-block {
   display: block;
+  height: 330px;
 }
 .exampleDf-block.df {
   display: flex;
 }
-.exampleDf-item {
+
+.examples-item {
   width: 100px;
   height: 100px;
   background-color: #3f2f22;
@@ -12,23 +14,82 @@
   padding: 33px;
   margin-right: 20px;
 }
-.exampleDf-item:nth-child(2) {
+.examples-item:nth-child(2) {
   background-color: #959072;
 }
-.exampleDf-item:last-child {
+.examples-item:last-child {
   background-color: #443f2b;
 }
-.subtitle{
-    font-weight: 600;
+
+.subtitle {
+  font-weight: 600;
 }
-.achor__subtitle {
-  visibility: hidden;
-  margin-left: 20px;
-  width: 2.5%;
-  margin-top: 3px;
-  float: left;
+
+.ExampleDc__reverse,
+.ExampleDc__normal {
+  margin-bottom: 20px;
+  height: 330px;
 }
-.subtitle:hover .achor__subtitle {
-  visibility: visible;
-  
+.exampleDc__normal-block {
+  display: flex;
+  flex-direction: row;
+}
+.exampleDc__normal-block.acitve {
+  flex-direction: column;
+}
+.exampleDc__reverse-block {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.exampleDc__reverse-block.active {
+  flex-direction: column-reverse;
+}
+
+.examplesJuC-block {
+  display: flex;
+  justify-content: flex-start;
+}
+.examplesJuC-block.fe {
+  justify-content: flex-end;
+}
+.examplesJuC-block.center {
+  justify-content: center;
+}
+.examplesJuC-block.spb {
+  justify-content: space-between;
+}
+.examplesJuC-block.spa {
+  justify-content: space-around;
+}
+
+.examplesAlignI-block {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 300px;
+}
+.examplesAi-item {
+  width: 100px;
+  background-color: #3f2f22;
+  text-align: center;
+  padding: 33px;
+  margin-right: 20px;
+}
+.examplesAi-item:nth-child(2) {
+  background-color: #959072;
+}
+.examplesAi-item:last-child {
+  background-color: #443f2b;
+}
+.examplesAlignI-block.fe {
+  align-items: flex-end;
+}
+.examplesAlignI-block.center {
+  align-items: center;
+}
+.examplesAlignI-block.stretch {
+  align-items: stretch;
+}
+.examplesAlignI-block.baseline {
+  align-items: baseline;
 }
