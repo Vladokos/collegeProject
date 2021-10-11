@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../style/resetStyle.css" />
     <link rel="stylesheet" href="../style/blanks/hamburgerStyle.css" />
     <link rel="stylesheet" href="../style/blanks/initialStyle.css" />
-    <link rel="stylesheet" href="../style/cssLessonStyle/styleLesson8.css" />
+    <link rel="stylesheet" href="../style/cssLessonStyle/styleLesson9.css" />
   </head>
   <body>
     <div class="page">
@@ -56,177 +56,87 @@
               <h2 class="hook" id="whatFlex">
                 <a href="#whatFlex"
                   ><img class="achor" src="../image/button/chain.svg" />Что
-                  такое Flexbox?
+                  такое псевдоклассы?
                 </a>
               </h2>
               <p>
-                Flexbox - это технология для создания сложных гибких макетов за
-                счёт правильного размещения элементов на странице.
+                Псевдокласс в CSS — это ключевое слово, добавленное к селектору,
+                которое определяет его особое состояние.
               </p>
             </div>
             <div class="howUseFlex">
               <h2 class="hook" id="whatFlex">
                 <a href="#whatFlex"
                   ><img class="achor" src="../image/button/chain.svg" />Как
-                  использовать Flexbox?
+                  использовать Псевдоклассы?
                 </a>
               </h2>
               <p>
-                Для того чтобы использовать Flexbox в css в классе нужно
-                приписать свойство display:flex;
+                Все псевдоклассы задаются одинаково и для того чтобы
+                использовать псевдокласс вам надо к класу приписать псевдокласс
               </p>
               <p>
-                Нажмите на любой из 3 кубиков или рядом с ними чтобы увидеть
-                результат
+                Например:
+                <br />
+                .название_класса:псевдокласс{ свойства } .example:hover{
+                color:#3F2F22; }
               </p>
+              <p>Наведите на текст чтобы увидеть результат</p>
               <p>
                 Текущее состояние: <br />
-                <span class="stateDf" id="stateDf">display:block;</span>
-              </p>
-              <div class="exampleDf">
-                <ul class="exampleDf-block" id="exampleDf-block">
-                  <li class="examples-item">1</li>
-                  <li class="examples-item">2</li>
-                  <li class="examples-item">3</li>
-                </ul>
-              </div>
-            </div>
-            <div class="flex-direction">
-              <div class="subtitle">flex-direction</div>
-              <p>
-                У flex-контейнера есть две оси: главная и перпендикулярная ей.
-                По умолчанию все предметы располагаются вдоль главной оси —
-                слева направо. Именно поэтому блоки в предыдущем примере
-                выстроились в линию, когда мы применили display: flex. А вот
-                flex-direction позволяет вращать главную ось.
-              </p>
-              <p>У свойства flex-direction елсть несколько значенией</p>
-              <ul>
-                <li>flex-direction: row; - сдвигает все элементы в строку</li>
-                <li>
-                  flex-direction: column; - сдвигает все элементы в столбец
-                </li>
-                <li>flex-direction: row-reverse; - переворачивает строку</li>
-                <li>
-                  flex-direction: column-reverse; - переворачивает столбец
-                </li>
-              </ul>
-              <p>Примеры:</p>
-              <div class="ExamplesDc">
-                <p>
-                  Текущее состояние: <br />
-                  <span class="stateDc" id="stateDc">flex-direction: row;</span>
-                </p>
-                <div class="ExampleDc__normal">
-                  <ul
-                    class="exampleDc__normal-block"
-                    id="exampleDc__normal-block"
-                  >
-                    <li class="examples-item">1</li>
-                    <li class="examples-item">2</li>
-                    <li class="examples-item">3</li>
-                  </ul>
-                </div>
-                <p>
-                  Текущее состояние:<br />
-                  <span class="stateDc__reverse" id="stateDc__reverse"
-                    >flex-direction: row-reverse;</span
-                  >
-                </p>
-                <div class="ExampleDc__reverse">
-                  <ul
-                    class="exampleDc__reverse-block"
-                    id="exampleDc__reverse-block"
-                  >
-                    <li class="examples-item">1</li>
-                    <li class="examples-item">2</li>
-                    <li class="examples-item">3</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="justify-content">
-              <div class="subtitle">justify-content</div>
-              <p>
-                justify-content - отвечает за выравнивание элементов по главной
-                оси
-              </p>
-              <p>У свойства justify-content есть несколько значенией</p>
-              <ul>
-                <li>flex-start - распологает элементы в начале строки</li>
-                <li>flex-end - распологает элементы в конце строки</li>
-                <li>center - распологает элементы по центру строки</li>
-                <li>
-                  space-between - элементы равномерно распределяются по всей
-                  строке.Первый и последний элемент прижимаются к
-                  соответствующим краям контейнера.
-                </li>
-                <li>
-                  space-around - элементы равномерно распределяются по всей
-                  строке. Пустое пространство перед первым и после последнего
-                  элементов равно половине пространства между двумя соседними
-                  элементами.
-                </li>
-              </ul>
-              <p>Примеры:</p>
-              <p>
-                Текущее состояние:<br />
-                <span class="stateJuc" id="stateJuc">
-                  justify-content: flex-start;</span
+                <span class="stateExample" id="stateExample">
+                  color: #f0e7d6;</span
                 >
               </p>
-              <div class="ExamplesJuC">
-                <ul class="examplesJuC-block" id="examplesJuC-block">
-                  <li class="examples-item">1</li>
-                  <li class="examples-item">2</li>
-                  <li class="examples-item">3</li>
-                </ul>
-              </div>
+              <p>
+                При наведения указателя мыши на этот текст срабавтывает
+                псевдокласс :hover и заменяет цвет текста на коричневый
+              </p>
             </div>
-            <div class="align-items">
-              <div class="subtitle">align-items</div>
+            <div class="hover">
+              <div class="subtitle">:hover</div>
               <p>
-                align-items - Если justify-content работает с главной осью, то
-                align-items работает с осью, перпендикулярной главной оси.
+                :hover - псевдокласс срабатывает, когда пользователь наводит на
+                элемент мышью, но не обязательно активирует его.
               </p>
-              <p>У свойства align-items есть 5 значенией</p>
-              <ul>
-                <li>
-                  flex-start - элементы выравниваются относительно верхнего края
-                  (начала) контейнера.
-                </li>
-                <li>
-                  flex-end - элементы выравниваются относительно нижнего края
-                  (конца) контейнера.
-                </li>
-                <li>center - элементы выравниваются по центру контейнера.</li>
-                <li>
-                  stretch - элементы растягиваются, занимая все пространство
-                  контейнера по высоте.
-                </li>
-                <li>baseline - элементы выравниваются по базовой линии.</li>
-              </ul>
               <p>
-                Текущее состояние:<br />
-                <span class="stateAligItm" id="stateAligItm">
-                  align-items: flex-start;</span
-                >
+                Этот псевдокласс можно использовать с другимми псевдоклассами
+                такими как :link, :visited и :active
               </p>
-              <div class="ExamplesAlignI">
-                <ul class="examplesAlignI-block" id="examplesAlignI-block">
-                  <li class="examplesAi-item">1</li>
-                  <li class="examplesAi-item">2</li>
-                  <li class="examplesAi-item">3</li>
-                </ul>
+              <div class="link">
+                <div class="subtitle">:link</div>
+                <p>:link - позволяет задавать стили не посещенных ссылок.</p>
+                <p>
+                  Также жто псевдокласс можно использовать с другими такими как
+                  :hover, :active или :visited.
+                </p>
+                <p>
+                  Для примера не посещенной ссылке ниже изменили тип цвета, но
+                  если ее посетить то она станет другого цвета
+                </p>
+                <a href="##" class="linkExample">Тестовая ссылка</a>
               </div>
-              <p>
-                Можете вручную прпробовать использовать эти данные
-              </p>
+              <div class="visited">
+                <div class="subtitle">:visited</div>
+                <p>
+                  :visited - позволяет задавать стили только тем ссылкам которые
+                  были посещены.
+                </p>
+                <p>
+                  Также жто псевдокласс можно использовать с другими такими как
+                  :link, :hover и :active
+                </p>
+                <p>
+                  Для примера поситите следующую ссылку и посмотрите как
+                  изменится ее цвет после посещения
+                </p>
+                <a href="##" class="visitedExample">Тестовая ссылка</a>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      
+
       <section class="code__redactor">
         <iframe
           src="https://codesandbox.io/embed/elastic-bush-6r4o0?fontsize=14&hidenavigation=1&theme=dark"
@@ -262,7 +172,10 @@
         </div>
       </footer>
     </div>
-    <script src="../js/cssLesson/exampleFlex.js" defer="defer"></script>
+    <script
+      src="../js/cssLesson/examplePseudoClasses.js"
+      defer="defer"
+    ></script>
     <script src="../js/hamburger.js" defer="defer"></script>
   </body>
 </html>
