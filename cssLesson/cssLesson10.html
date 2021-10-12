@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../style/resetStyle.css" />
     <link rel="stylesheet" href="../style/blanks/hamburgerStyle.css" />
     <link rel="stylesheet" href="../style/blanks/initialStyle.css" />
-    <link rel="stylesheet" href="../style/cssLessonStyle/styleLesson9.css" />
+    <link rel="stylesheet" href="../style/cssLessonStyle/styleLesson10.css" />
   </head>
   <body>
     <div class="page">
@@ -23,7 +23,7 @@
                   alt="back"
               /></a>
             </div>
-            <div class="header__numberLesson">Псевдоклассы</div>
+            <div class="header__numberLesson">Псевдоэлементы</div>
             <div class="header__burgergMenu" id="header__burgergMenu">
               <div class="burgerMenu__btn">
                 <div class="burgerMenu__btn2"></div>
@@ -56,12 +56,13 @@
               <h2 class="hook" id="whatFlex">
                 <a href="#whatFlex"
                   ><img class="achor" src="../image/button/chain.svg" />Что
-                  такое псевдоклассы?
+                  такое псевдоэлементы?
                 </a>
               </h2>
               <p>
-                Псевдокласс в CSS — это ключевое слово, добавленное к селектору,
-                которое определяет его особое состояние.
+                Псевдоэлемент — это ключевое слово, добавляемое к селектору,
+                которое позволяет стилизовать определённую часть выбранного
+                элемента.
               </p>
             </div>
             <div class="howUseFlex">
@@ -71,26 +72,22 @@
                   использовать Псевдоклассы?
                 </a>
               </h2>
-              <p>
-                Все псевдоклассы задаются одинаково и для того чтобы
-                использовать псевдокласс вам надо к класу приписать псевдокласс
-              </p>
+              <p>Все псевдоэлемнты задаются похожим образом как псевдоклассы</p>
               <p>
                 Например:
                 <br />
-                .название_класса:псевдокласс{ свойства } .example:hover{
-                color:#3F2F22; }
+                .название_класса::псевдоэлемнты{ свойства }
+                .example::first-line{ color:#3F2F22; }
               </p>
-              <p>Наведите на текст чтобы увидеть результат</p>
-              <p>
-                Текущее состояние: <br />
-                <span class="stateExample" id="stateExample">
-                  color: #f0e7d6;</span
-                >
+              <p>следующий текст используеет псевдоэлемент ::first-line</p>
+              <p class="firstLineExample">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
+                veniam sint amet at quisquam explicabo consequatur nisi,
+                deleniti distinctio possimus dolore omnis corrupti quod ratione
+                dicta ipsam facere, sequi repellendus.
               </p>
               <p>
-                При наведения указателя мыши на этот текст срабавтывает
-                псевдокласс :hover и заменяет цвет текста на коричневый
+                ::first-line - задает стили первой строке класса
               </p>
             </div>
             <div class="hover">
@@ -174,9 +171,7 @@
                     <li class="example-block">я второй элемент</li>
                   </ul>
                 </div>
-                <p>
-                  Можете вручную прпробовать использовать эти данные
-                </p>
+                <p>Можете вручную прпробовать использовать эти данные</p>
               </div>
             </div>
           </div>
