@@ -1,7 +1,7 @@
 .stateExample:hover {
   color: #3f2f22;
 }
-.linkExample {
+.example {
   margin-bottom: 30px;
 }
 .linkExample:link {
@@ -9,4 +9,14 @@
 }
 .visitedExample:visited {
   color: #708090;
+}
+.activeExample{
+  background: #443F2B;
+  padding: 15px;
+  border-radius: 50px;
+  box-shadow: 10px 5px 5px #2e2a1c;
+  transition: all ease-in-out 0.5s;
+}
+.activeExample:hover{
+  box-shadow: 0px 0px 0px #2e2a1c;
 }
