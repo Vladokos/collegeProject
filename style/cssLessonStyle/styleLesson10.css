@@ -1,3 +1,45 @@
 .firstLineExample::first-line {
   color: #3f2f22;
 }
+.firstLetterExample::first-letter {
+  color: #3f2f22;
+}
+.afterExample {
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+}
+.afterExample::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  position: absolute;
+  animation: moveBlackBox 2s infinite ease-in;
+}
+
+@keyframes moveBlackBox {
+  0% {
+    left: 20%;
+    top: 79.2em;
+  }
+  20% {
+    left: 24.8%;
+    top: 79.2em;
+  }
+  40% {
+    top: 83.3em;
+  }
+  80% {
+    left: 20%;
+    top: 83.3em;
+  }
+  100% {
+    top: 79.2em;
+  }
+}
+
+.beforeExample::before {
+  content: "Я псевдоэлемент ::before";
+  margin-right: 20px;
+}
