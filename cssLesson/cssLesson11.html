@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../style/resetStyle.css" />
     <link rel="stylesheet" href="../style/blanks/hamburgerStyle.css" />
     <link rel="stylesheet" href="../style/blanks/initialStyle.css" />
-    <link rel="stylesheet" href="../style/cssLessonStyle/styleLesson10.css" />
+    <link rel="stylesheet" href="../style/cssLessonStyle/styleLesson11.css" />
   </head>
   <body>
     <div class="page">
@@ -52,59 +52,55 @@
       <section class="theory">
         <div class="container">
           <div class="theory__inner">
-            <div class="whatFlex">
+            <div class="howUseAnimation">
               <h2 class="hook" id="whatFlex">
                 <a href="#whatFlex"
-                  ><img class="achor" src="../image/button/chain.svg" />Что
-                  такое псевдоэлементы?
+                  ><img class="achor" src="../image/button/chain.svg" />Анимации
+                  что это и как ?
                 </a>
               </h2>
               <p>
-                Псевдоэлемент — это ключевое слово, добавляемое к селектору,
-                которое позволяет стилизовать определённую часть выбранного
-                элемента.
+                В css можно задавать анимацию 2 спсобами через transition и
+                @keyframes
               </p>
             </div>
-
-            <div class="howUseFlex">
-              <h2 class="hook" id="whatFlex">
-                <a href="#whatFlex"
-                  ><img class="achor" src="../image/button/chain.svg" />Как
-                  использовать Псевдоклассы?
-                </a>
-              </h2>
-              <p>Все псевдоэлемнты задаются похожим образом как псевдоклассы</p>
+            <div class="transition">
+              <div class="subtitle">transition</div>
+              <p>transition - задает анимацию при изменении свойств</p>
+              <p>Для примера навидите на квадрат</p>
+              <div class="transitionExample">
+                <div class="translitionBlockExample"></div>
+              </div>
               <p>
-                Например:
+                Для того чтобы это анимировать всего лишь понадобилось задать
+                стили тегу <br />
+                .translitionBlockExample{ background-color: #3f2f22; width:
+                150px; height: 150px; transition: 0.8s ease-in; }
                 <br />
-                .название_класса::псевдоэлемнты{ свойства }
-                .example::first-line{ color:#3F2F22; }
+                тут были заданы цвет заднего фона для блока, ширина, высота и
+                translition
+                <br />
+                translition: 0.8s - это длительность анимации, а ease-in - это
+                ее плавноость
               </p>
-              <p>следующий текст используеет псевдоэлемент ::first-line</p>
-              <p class="firstLineExample">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
-                veniam sint amet at quisquam explicabo consequatur nisi,
-                deleniti distinctio possimus dolore omnis corrupti quod ratione
-                dicta ipsam facere, sequi repellendus.
-              </p>
-              <p>::first-line - задает стили первой строке класса</p>
-            </div>
-            <div class="first-letter">
-              <div class="subtitle">first-letter</div>
               <p>
-                ::first-letter - позволяет задавать стили только первой букве
+                На этом
+                <a class="aTeg" href="https://easings.net/ru">сайте</a> вы
+                можете посмотреть более обширный список анимаций с помщью
+                translation
               </p>
-              <p>В следующем тексте используется ::first-letter</p>
-              <p class="firstLetterExample">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Asperiores perspiciatis voluptatum accusantium dolorum saepe
-                iste consequatur. Nisi laudantium molestias aspernatur quidem
-                error, tenetur veniam voluptates ipsum! Labore aspernatur
-                quibusdam provident?
+              <p>
+                Далее добавлен был псевдокласс :hover и стили <br />
+                .translitionBlockExample:hover{ width: 90px; height: 90px;
+                background-color: #a7622a; }
+                <br>
+                При наведении эти стили применяются но с анимацией и после
+                потери фокуса стили возвращабтся к изначальному состоянию также с
+                анимацией
               </p>
             </div>
-            <div class="after">
-              <div class="subtitle">after</div>
+            <div class="keyframes">
+              <div class="subtitle">keyframes</div>
               <p>::after - создаёт псевдоэлемент после тега</p>
               <p>
                 Например:
