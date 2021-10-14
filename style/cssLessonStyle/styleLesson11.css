@@ -1,17 +1,31 @@
-.transitionExample{
-    height: 150px;
+.transitionExample {
+  height: 150px;
 }
-.translitionBlockExample{
-    background-color: #3f2f22;
-    width: 150px;
-    height: 150px;
-    transition:  0.8s ease-in;
+.translitionBlockExample {
+  background-color: #3f2f22;
+  width: 150px;
+  height: 150px;
+  transition: 0.8s ease-in;
 }
-.translitionBlockExample:hover{
-    width: 90px;
-    height: 90px;
-    background-color: #a7622a;
+.translitionBlockExample:hover {
+  width: 90px;
+  height: 90px;
+  background-color: #a7622a;
 }
-.aTeg{
-    text-decoration: underline;
+.aTeg {
+  text-decoration: underline;
+}
+.keyframesExamples:hover {
+    animation: shadow 2s infinite ease-in-out;
+}
+@keyframes shadow {
+  from {
+    text-shadow: 0 0 3px black;
+  }
+  50% {
+    text-shadow: 0 0 30px black;
+  }
+  to {
+    text-shadow: 0 0 3px black;
+  }
 }

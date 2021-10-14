@@ -93,64 +93,54 @@
                 Далее добавлен был псевдокласс :hover и стили <br />
                 .translitionBlockExample:hover{ width: 90px; height: 90px;
                 background-color: #a7622a; }
-                <br>
+                <br />
                 При наведении эти стили применяются но с анимацией и после
-                потери фокуса стили возвращабтся к изначальному состоянию также с
-                анимацией
+                потери фокуса стили возвращаются к изначальному состоянию также
+                с анимацией
               </p>
             </div>
             <div class="keyframes">
               <div class="subtitle">keyframes</div>
-              <p>::after - создаёт псевдоэлемент после тега</p>
               <p>
-                Например:
-                <br />
-                .example::after{ content: ""; width: 10px; height: 10px;
-                background-color: #000; position: absolute; }
+                @keyframes - ключевые кадры используются для указания значений
+                свойств анимации в различных точках анимации. Ключевые кадры
+                определяют поведение одного цикла анимации; анимация может
+                повторяться ноль или более раз.
               </p>
               <p>
-                content - обязательно прописывается и используется для задатия
-                контента(текст, символы, цифры) который будет содержать
-                псевдоэлемент, а если вам не нужен какой-либо контент, то это
-                поле оставляют пустым
+                Чтобы задать keyframes нужно использоть эту структуру:<br />
+                @keyframes имя анимации { список правил }
               </p>
               <p>
-                Потом если у вас пустой content, то задают ширину и высоту чтобы
-                можно было увидеть псевдоэлемент так как изначально его ширина и
-                высота будет равной нулю
-              </p>
-              <p>
-                После задают цвет заднего фона так как изначально псевдоэлемент
-                бесцветный
-              </p>
-              <p>
-                position: absolute задают в том случае если content пустой, это
-                свойство позволяет его вывести на экран и в дальнейшем работать
-                с ним задавая top/bottom/left/right
-              </p>
-              <p>В следующем блоке используется ::after</p>
-              <div class="afterExample"></div>
-              <p>
-                В нем используются такие же стили которые были описаны выше но
-                только с добвалениям анимации о которой будет рассказано в
-                следующем уроке
-              </p>
-            </div>
-            <div class="before">
-              <div class="subtitle">before</div>
-              <p>::before - создаёт псевдоэлемент перед тега</p>
-              <p>
-                Работает так же как и ::after но создаёт псевдоэлемент перед
-                тегом
-                <br />
+                Список правил - это установка ключевых кадров. <br />
                 Например:
               </p>
-              <p class="beforeExample">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi
-                animi architecto blanditiis at provident! Officia perspiciatis
-                reprehenderit ut delectus cum odit fugit cupiditate amet totam
-                accusantium quam sit, sed distinctio.
+              <p>
+                @keyframes shadow { from {text-shadow: 0 0 3px black;} 50%
+                {text-shadow: 0 0 30px black;} to {text-shadow: 0 0 3px black;}
+                }
               </p>
+              <p>from - первый кадр, аналогичен 0%</p>
+              <p>50% - на середине анимации</p>
+              <p>to - последний кадр, аналогичен 100%.</p>
+              <p>Наведите на текст чтобы анимация запустилась</p>
+              <p class="keyframesExamples">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+                nihil alias a fugit deleniti rem illum, nisi ad ea dicta porro
+                suscipit ex quo asperiores quos eos id ipsum sed.
+              </p>
+              <p>
+                После того как были созданы @keyframes, надо добавить анимацию тегу
+                для этого нужно внутри тега написать:
+              </p>
+              <p>
+                animation: имя анимаций  длительность анимации кол-во повторений функция плавности
+              </p>
+              <ul>
+                <li>Длительность - задается в секундах 2s,0.1s и так далее</li>
+                <li>кол-во повторений - infinite(бесконечное) или в числах 0,1,2,3  </li>
+                <li>функция плавности - ease-in-out, ease-in и так далее </li>
+              </ul>
             </div>
             <p>Можете вручную прпробовать использовать эти данные</p>
           </div>
