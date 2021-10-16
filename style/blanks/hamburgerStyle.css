@@ -60,6 +60,7 @@ li {
   background-color: #af9572;
   transition: all 0.9s cubic-bezier(0.36, 0, 0.66, -0.56);
 }
+/* sticks active */
 .header__burgergMenu.active .burgerMenu__btn::before {
   transform: rotateZ(45deg) translateY(13px) translateX(10px);
 }
@@ -109,4 +110,3 @@ li {
 .notActiveContent:hover:after {
   width: 50%;
 }
-
