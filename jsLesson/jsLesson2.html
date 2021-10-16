@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS learn</title>
+    <link rel="stylesheet" href="../style/resetStyle.css" />
+    <link rel="stylesheet" href="../style/blanks/hamburgerStyle.css" />
+    <link rel="stylesheet" href="../style/blanks/initialStyle.css" />
+    <link rel="stylesheet" href="../style/jsLessonStyle/styleJs2.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__backButton">
+              <a href="../index.html" class="back__button"
+                ><img
+                  src="../image/button/arrow_back.svg"
+                  class="back__button-arrow"
+                  alt="back"
+              /></a>
+            </div>
+            <div class="header__numberLesson">Первая программа</div>
+            <div class="header__burgergMenu" id="header__burgergMenu">
+              <div class="burgerMenu__btn">
+                <div class="burgerMenu__btn2"></div>
+              </div>
+              <div class="burgerMenu__content" id="burgerMenu__content">
+                <ul>
+                  <li class="notActiveContent">
+                    <a href="./cssLesson.html">Вступление</a>
+                  </li>
+                  <li class="notActiveContent">
+                    <a href="./cssLesson2.html"> Настройка стилей</a>
+                  </li>
+                  <li class="activeContent">Стили для текста</li>
+                  <li class="notActiveContent">
+                    <a href="./cssLesson4.html">Работа с размером</a>
+                  </li>
+                  <li class="notActiveContent">
+                    <a href="./cssLesson5.html">Закрепление материала</a>
+                  </li>
+                  <li class="notActiveContent">
+                    <a href="./cssLesson6.html">Классы</a>
+                  </li>
+                  <li class="notActiveContent">
+                    <a href="./cssLesson7.html">Позиционирование</a>
+                  </li>
+                  <li class="notActiveContent">
+                    <a href="./cssLesson8.html">Flexbox</a>
+                  </li>
+                  <li class="notActiveContent">
+                    <a href="./cssLesson9.html">Псевдоклассы</a>
+                  </li>
+                  <li class="notActiveContent">
+                    <a href="./cssLesson10.html">Псевдоэлементы</a>
+                  </li>
+                  <li class="notActiveContent">
+                    <a href="./cssLesson11.html">Анимации</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="theory">
+        <div class="container">
+          <div class="theory__inner">
+            <div class="howConnect">
+              <h2 class="hook" id="tekst_edit">
+                <a href="#tekst_edit"
+                  ><img
+                    class="achor"
+                    src="../image/button/chain.svg"
+                  />Подготовка</a
+                >
+              </h2>
+              <p>
+                Для того чтобы JS начал работать его нужно подключить в HTML
+                документе похожим образом как CSS
+              </p>
+              <p>Перед закрывающим тегом body нужно добавить ссылку на JS</p>
+              <p>
+                &lt;script src="./имя или путь к файлу .js"&gt; &lt;/script&gt;
+              </p>
+              <p>После этого можно приступать к написанию кода в файле JS</p>
+              <p>
+                JS подключают снизу из-за того что этот файл может содержать
+                команды который будут работать только после загрузки HTML и CSS
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="task">
+        <div class="container">
+          <div class="task__inner">
+            <h2 class="hook" id="task">
+              <a href="#task"
+                ><img class="achor" src="../image/button/chain.svg" />
+                Hello world!
+              </a>
+            </h2>
+            <p>
+              Первая программа будет - поздороваться с миром, это такая традиция
+              при изучении нового языка программирования нужно поздороваться с
+              миром
+            </p>
+            <p>Для того чтобы это сделать нужно будет:</p>
+            <ul>
+              <li>Подключить JS к HTML фалу</li>
+              <li>в JS файле написать console.log("Hello world!");</li>
+              <li>
+                После этого надо открыть "Console" или нажмите на F12(ПКМ по
+                пустому месту и консоль разработчика или просмотреть код) и в
+                консоле будет вывод текста
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="code__redactor">
+        <iframe
+          src="https://codesandbox.io/embed/sweet-hoover-ojib5?fontsize=14&hidenavigation=1&theme=dark"
+          style="
+            width: 63%;
+            height: 500px;
+            border: 0;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 5em 0 0 25em;
+          "
+          title="sweet-hoover-ojib5"
+          allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+          sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+        ></iframe>
+      </section>
+      <section class="explain">
+        <div class="container">
+          <div class="explain__inner">
+            <p>
+              console.log() - эта команда выводит в консоль то что будет в
+              скобках
+            </p>
+            <p>
+              Так же есть команда, которая работает как предупреждение - alert()
+            </p>
+            <p>
+              alert() - выводит окно сверху браузера(зачастую используется как
+              предупреждение) и показывает данные из скобок
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="next__lesson">
+        <a href="./jsLesson3.html" class="next__button"
+          ><img
+            src="../image/button/arrow_next.svg"
+            class="next__button-arrow"
+            alt="next"
+          />
+        </a>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="aboutAuthor">Данные об авторе:</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../js/hamburger.js" defer="defer"></script>
+  </body>
+</html>

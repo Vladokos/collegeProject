@@ -47,10 +47,12 @@ p {
   text-align: center;
   font-size: 22px;
 }
+.explain,
 .theory,
 .task {
   padding: 80px 0 35px 0;
 }
+.explain__inner,
 .theory__inner,
 .task {
   color: #f0e7d6;
