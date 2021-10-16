@@ -79,6 +79,7 @@ li {
   left: -50%;
   opacity: 0;
   padding: 25px;
+
   transition: 0.7s cubic-bezier(0.37, 0, 0.63, 1);
 }
 .burgerMenu__content.active {
@@ -97,16 +98,3 @@ li {
   transition: 0.7s cubic-bezier(0.37, 0, 0.63, 1);
 }
 
-.notActiveContent:after {
-  content: "";
-  display: block;
-  height: 2px;
-  left: 10%;
-  position: absolute;
-  background: #959072;
-  width: 0px;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-}
-.notActiveContent:hover:after {
-  width: 50%;
-}
