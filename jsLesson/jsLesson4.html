@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../style/resetStyle.css" />
     <link rel="stylesheet" href="../style/blanks/hamburgerStyle.css" />
     <link rel="stylesheet" href="../style/blanks/initialStyle.css" />
-    <link rel="stylesheet" href="../style/jsLessonStyle/styleJs3.css" />
+    <link rel="stylesheet" href="../style/jsLessonStyle/styleJs4.css" />
   </head>
   <body>
     <div class="page">
@@ -23,7 +23,7 @@
                   alt="back"
               /></a>
             </div>
-            <div class="header__numberLesson">Переменные и типы данных</div>
+            <div class="header__numberLesson">Сравнение</div>
             <div class="header__burgergMenu" id="header__burgergMenu">
               <div class="burgerMenu__btn">
                 <div class="burgerMenu__btn2"></div>
@@ -77,31 +77,72 @@
                   ><img
                     class="achor"
                     src="../image/button/chain.svg"
-                  />Переменные</a
+                  />Конструкция if...else...else if</a
                 >
               </h2>
-              <p>В JavaScipt есть 3 переменных</p>
-              <ul>
-                <li>var - объявляет переменную с глобальной видимостью</li>
-                <li>let - объявляет переменную с локальной видимостью</li>
-                <li>
-                  const - объявляет константу(переменная которой можно присвоить
-                  значение а дальше его изменять нельзя)
-                </li>
-              </ul>
               <p>
-                Пока для начала в большенстве случаев лучше использовать let
+                Для того чтобы сравнить некоторые данные и выполнить потом
+                действия используется if, например:
               </p>
               <p>
-                Для того чтобы присвоить значение переменной нужно написать
-                переменную, название и значаение, пример:
+                if(12 < 22) {
+                <br />
+                console.log("12 меньше 22");
+                <br />
+                }
               </p>
-              <p>let(переменная) name(название) = 10(значение);</p>
               <p>
-                После этого название переменной будет хранить значение, которое
-                можно будет использовать в других действиях. Для примера
-                console.log(name) выведет цифру 10 так как name хранит в себе 10
-                (name = 10)
+                Здесь задается условие if(если) 12 меньше 22 то выполняется то
+                что написанно в фигурных скобках, в данном случае
+                console.log("12 меньше 22");
+              </p>
+              <p>
+                Если вдруг для примера 12 будт больше 22, то тогда что внутри
+                фигурных скобка не выполниться, а просто пропустит
+              </p>
+              <p>
+                else - используется для того что если if будет ложно то
+                выполниться else, например
+              </p>
+              <p>
+                if(12 > 22){
+                <br />
+                console.log("12 больше 22");
+                <br />
+                }else{
+                <br />
+                console.log("12 меньше 22");
+                <br />
+                }
+              </p>
+              <p>
+                Здесь есть улсовие if, что если 12 больше 22, то выполниться, то
+                что в фигурных скобка, а если это неправда что 12 больше 22 то
+                тогда выполниться else
+              </p>
+              <p>
+                else if - используется если условие if ложно, но нужно проверить
+                другое условие, например:
+              </p>
+              <p>
+                if(12 > 22){
+                <br />
+                console.log("12 больше 22");
+                <br />
+                }else if (12 < 22){
+                <br />
+                console.log("12 меньше 22");
+                <br />
+                }else{
+                <br />
+                console.log("они равны");
+                <br />
+                }
+              </p>
+              <p>
+                Здесь если условие if (12 > 22) ложно, то проверяется условие
+                else if(иначе если) 12 меньше 22, то выполниться то что внутри
+                фигурных скобках, а если и else if ложно, то выполниться else
               </p>
             </div>
             <div class="dataTypes">
@@ -196,7 +237,7 @@
               <div class="subtitle">Symbol</div>
               <p>
                 Symbol - это уникальный и неизменяемый тип данных, который может
-                быть использован как идентификатор для свойств объектов. 
+                быть использован как идентификатор для свойств объектов.
               </p>
             </div>
           </div>
@@ -236,7 +277,7 @@
         ></iframe>
       </section>
       <section class="next__lesson">
-        <a href="./jsLesson4.html" class="next__button"
+        <a href="./jsLesson3.html" class="next__button"
           ><img
             src="../image/button/arrow_next.svg"
             class="next__button-arrow"
