@@ -72,9 +72,11 @@ p {
 }
 .next__lesson {
   justify-self: end;
+  margin-right: 205px;
 }
 .next__button-arrow {
-  width: 32%;
+  width: 96px;
+  height: 96px;
 }
 .footer {
   padding: 20px;

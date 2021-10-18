@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS learn</title>
+    <link rel="stylesheet" href="../style/resetStyle.css" />
+    <link rel="stylesheet" href="../style/blanks/hamburgerStyle.css" />
+    <link rel="stylesheet" href="../style/blanks/initialStyle.css" />
+    <link rel="stylesheet" href="../style/jsLessonStyle/styleJs5.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__backButton">
+              <a href="../index.html" class="back__button"
+                ><img
+                  src="../image/button/arrow_back.svg"
+                  class="back__button-arrow"
+                  alt="back"
+              /></a>
+            </div>
+            <div class="header__numberLesson">Циклы</div>
+            <div class="header__burgergMenu" id="header__burgergMenu">
+              <div class="burgerMenu__btn">
+                <div class="burgerMenu__btn2"></div>
+              </div>
+              <div class="burgerMenu__content" id="burgerMenu__content">
+                <ul>
+                  <li class="notActiveContent">
+                    <a href="./cssLesson.html">Вступление</a>
+                  </li>
+                  <li class="notActiveContent">
+                    <a href="./cssLesson2.html"> Настройка стилей</a>
+                  </li>
+                  <li class="activeContent">Стили для текста</li>
+                  <li class="notActiveContent">
+                    <a href="./cssLesson4.html">Работа с размером</a>
+                  </li>
+                  <li class="notActiveContent">
+                    <a href="./cssLesson5.html">Закрепление материала</a>
+                  </li>
+                  <li class="notActiveContent">
+                    <a href="./cssLesson6.html">Классы</a>
+                  </li>
+                  <li class="notActiveContent">
+                    <a href="./cssLesson7.html">Позиционирование</a>
+                  </li>
+                  <li class="notActiveContent">
+                    <a href="./cssLesson8.html">Flexbox</a>
+                  </li>
+                  <li class="notActiveContent">
+                    <a href="./cssLesson9.html">Псевдоклассы</a>
+                  </li>
+                  <li class="notActiveContent">
+                    <a href="./cssLesson10.html">Псевдоэлементы</a>
+                  </li>
+                  <li class="notActiveContent">
+                    <a href="./cssLesson11.html">Анимации</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="theory">
+        <div class="container">
+          <div class="theory__inner">
+            <div class="while">
+              <h2 class="hook" id="while">
+                <a href="#while"
+                  ><img class="achor" src="../image/button/chain.svg" />While</a
+                >
+              </h2>
+              <p>Цикл while имеет следующий синтаксис:</p>
+              <p>
+                while (условие) {
+                <br />
+                код
+                <br />
+                }
+              </p>
+              <p>Код будет выполняется, пока условие истинно.</p>
+              <p>Например, цикл ниже выводит i, пока i <= 3 :</p>
+              <p>
+                let i = 0;
+                <br />
+                while (i <= 3) {
+                <br />
+                console.log( i );
+                <br />
+                i++;
+                <br />
+                }
+              </p>
+              <p>В результате в консоль выведется 0,1,2,3</p>
+            </div>
+            <div class="doWhile">
+              <h2 class="hook" id="doWhile">
+                <a href="#doWhile"
+                  ><img
+                    class="achor"
+                    src="../image/button/chain.svg"
+                  />do...while</a
+                >
+              </h2>
+              <p>Цикл do...while имеет следующий синтаксис:</p>
+              <p>
+                do {
+                <br />
+                код
+                <br />
+                } while (condition);
+              </p>
+              <p>
+                Цикл do...while выполниться один раз вне зависимости от условия,
+                например:
+              </p>
+              <p>
+                let i = 0;
+                <br />
+                do {
+                <br />
+                console.log( i );
+                <br />
+                i++;
+                <br />
+                } while (i < 3);
+              </p>
+            </div>
+            <div class="for">
+              <h3 class="hook" id="for">
+                <a href="#for"
+                  ><img class="achor" src="../image/button/chain.svg" />for</a
+                >
+              </h3>
+              <p>
+                Более сложный, но при этом самый распространённый цикл — цикл
+                for.
+              </p>
+              <p>Выглядит он так:</p>
+              <p>
+                for (начало; условие; шаг) {
+                <br />
+                код
+                <br />
+                }
+              </p>
+              <p>
+                Давайте разберёмся, что означает каждая часть, на примере. Цикл
+                ниже выполняет console.log(i) для i от 0 до (но не включая) 3:
+              </p>
+              <p>
+                for (let i = 0; i < 3; i++) {
+                <br />
+                console.log(i);
+                <br />
+                }
+              </p>
+              <p>В результате выведется 0,1,2</p>
+              <p>Рассмотрим конструкцию for подробней:</p>
+              <ul>
+                <li>
+                  Начало let i = 0 - объявлется переменная с начальным
+                  значением(обязательно)
+                </li>
+                <li>
+                  Условие i < 3 - ставиться условие до каких пор будет
+                  выполняться цикл. Проверяется при каждом шаге(выполнение кода)
+                </li>
+                <li>
+                  Шаг i++ - шаг выполняется полсе кода, каждый шаг перед
+                  проверкой условия
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="task">
+        <div class="container">
+          <div class="task__inner">
+            <h2 class="hook" id="task">
+              <a href="#task"
+                ><img class="achor" src="../image/button/chain.svg" />
+                Задание
+              </a>
+            </h2>
+            <p>
+              Подключите JS к HTML и создайте переменную с начальным значением
+              равным 0, после создайте цикл for или while внутри которого этому
+              числу будет добавлятся 1 и так до 5.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="code__redactor">
+        <iframe
+          src="https://codesandbox.io/embed/sweet-hoover-ojib5?fontsize=14&hidenavigation=1&theme=dark"
+          style="
+            width: 63%;
+            height: 500px;
+            border: 0;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 5em 0 0 25em;
+          "
+          title="sweet-hoover-ojib5"
+          allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+          sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+        ></iframe>
+      </section>
+      <section class="next__lesson">
+        <a href="./jsLesson6.html" class="next__button"
+          ><img
+            src="../image/button/arrow_next.svg"
+            class="next__button-arrow"
+            alt="next"
+          />
+        </a>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="aboutAuthor">Данные об авторе:</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../js/hamburger.js" defer="defer"></script>
+  </body>
+</html>
