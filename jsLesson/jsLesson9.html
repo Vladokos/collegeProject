@@ -23,9 +23,7 @@
                   alt="back"
               /></a>
             </div>
-            <div class="header__numberLesson">
-              Обработка действий пользователя
-            </div>
+            <div class="header__numberLesson">Стили и классы</div>
             <div class="header__burgergMenu" id="header__burgergMenu">
               <div class="burgerMenu__btn">
                 <div class="burgerMenu__btn2"></div>
@@ -53,12 +51,12 @@
                   <li class="notActiveContent">
                     <a href="./jsLesson7.html">Работа с DOM</a>
                   </li>
-                  <li class="activeContent">
-                    Обработка действий пользователя
-                  </li>
                   <li class="notActiveContent">
-                    <a href="./jsLesson9.html"> Стили и классы</a>
+                    <a href="./jsLesson8.html"
+                      >Обработка действий пользователя</a
+                    >
                   </li>
+                  <li class="activeContent">Стили и классы</li>
                 </ul>
               </div>
             </div>
@@ -69,73 +67,43 @@
       <section class="theory">
         <div class="container">
           <div class="theory__inner">
-            <div class="whatDOM">
-              <h2 class="hook" id="whatDom">
-                <a href="#whatDom"
+            <div class="classList">
+              <h2 class="hook" id="class">
+                <a href="#class"
                   ><img
                     class="achor"
                     src="../image/button/chain.svg"
-                  />addEventListener</a
+                  />Классы</a
                 >
               </h2>
-              <p>элемент.addEventListener(событие, функция)</p>
-              <p>Пример:</p>
-              <p>
-                let doc = document.getElementById("example");
-                <br />
-                doc.addEventListener("click", () => {
-                <br />
-                console.log("Click!");
-                <br />
-                });
-              </p>
-              <button class="buttonClick" id="buttonClick">
-                Нажми на меня
-              </button>
-              <p>
-                Получаем тег по id после добавлаем ему реакцию на событие в
-                данном случае используется реакция на нажатие. В итоге все
-                выводиться в консоль
-              </p>
-            </div>
-            <div class="workDOM">
-              <h2 class="hook" id="workD">
-                <a href="#workD"
-                  ><img
-                    class="achor"
-                    src="../image/button/chain.svg"
-                  />События</a
-                >
-              </h2>
+              <p>JavaScript может менять и классы</p>
+              <p>Методы classList:</p>
               <ul>
                 <li>
-                  click – происходит, когда кликнули на элемент левой кнопкой
-                  мыши (на устройствах с сенсорными экранами оно происходит при
-                  касании)
+                  elem.classList.add/remove("class") – добавить/удалить класс
                 </li>
                 <li>
-                  contextmenu – происходит, когда кликнули на элемент правой
-                  кнопкой мыши
+                  elem.classList.toggle("class") – добавить класс, если его нет,
+                  иначе удалить
                 </li>
                 <li>
-                  mouseover / mouseout – когда мышь наводится на / покидает
-                  элемент
-                </li>
-                <li>
-                  mousedown / mouseup – когда нажали / отжали кнопку мыши на
-                  элементе
-                </li>
-                <li>dmousemove – при движении мыши</li>
-                <li>submit – пользователь отправил форму &lt;form&gt;</li>
-                <li>
-                  focus – пользователь фокусируется на элементе, например
-                  нажимает на &lt;input&gt;
-                </li>
-                <li>
-                  keydown и keyup – когда пользователь нажимает / отпускает
-                  клавишу
+                  elem.classList.contains("class") – проверка наличия класса,
+                  возвращает true/false
                 </li>
               </ul>
+            </div>
+            <div class="elementStyle">
+              <h2 class="hook" id="elemStyle">
+                <a href="#elemStyle"
+                  ><img class="achor" src="../image/button/chain.svg" />Стили</a
+                >
+              </h2>
+              <p>
+                Свойство elem.style – это объект, который соответствует тому,
+                что написано в атрибуте "style". Установка стиля
+                elem.style.width="100px" работает так же, как наличие в CSS
+                строки width:100px
+              </p>
             </div>
           </div>
         </div>
@@ -151,9 +119,9 @@
               </a>
             </h2>
             <p>
-              Подключите JS к HTML и создайте один div внутри него какой-нибудь
-              контент, после добавьте в JS addEventListener на этот div и чтобы
-              когда мышь будет на элементе в консоль выводилось "Он тут"
+              Подключите JS к HTML и создайте один div получите его значение в
+              JS задайте ему дополнительный класс через elem.classList.add(""),
+              а после добавьте ему стили высоты через elem.style
             </p>
           </div>
         </div>
@@ -175,7 +143,7 @@
         ></iframe>
       </section>
       <section class="next__lesson">
-        <a href="./jsLesson9.html" class="next__button"
+        <a href="../index.html" class="next__button"
           ><img
             src="../image/button/arrow_next.svg"
             class="next__button-arrow"
