@@ -93,54 +93,53 @@
                 <br />
                 });
               </p>
-              <button class="buttonClick" id="buttonClick">Нажми на меня</button>
+              <button class="buttonClick" id="buttonClick">
+                Нажми на меня
+              </button>
               <p>
                 Получаем тег по id после добавлаем ему реакцию на событие в
-                данном случае используется реакция на нажатие
+                данном случае используется реакция на нажатие. В итоге все
+                выводиться в консоль
               </p>
             </div>
             <div class="workDOM">
               <h2 class="hook" id="workD">
                 <a href="#workD"
-                  ><img class="achor" src="../image/button/chain.svg" />События</a
+                  ><img
+                    class="achor"
+                    src="../image/button/chain.svg"
+                  />События</a
                 >
               </h2>
-              <p></p>
               <ul>
                 <li>
-                  document.getElementById() - получает данные тега по его id
+                  click – происходит, когда кликнули на элемент левой кнопкой
+                  мыши (на устройствах с сенсорными экранами оно происходит при
+                  касании)
                 </li>
                 <li>
-                  document.querySelectorAll() - возвращает все элементы которые
-                  подходят условию
+                  contextmenu – происходит, когда кликнули на элемент правой
+                  кнопкой мыши
                 </li>
                 <li>
-                  document.querySelector() - возвращает первый элемент который
-                  подходит условию
+                  mouseover / mouseout – когда мышь наводится на / покидает
+                  элемент
                 </li>
                 <li>
-                  document.getElementsByTagName() - ищет элементы с данным тегом
-                  и возвращает их значения
+                  mousedown / mouseup – когда нажали / отжали кнопку мыши на
+                  элементе
+                </li>
+                <li>dmousemove – при движении мыши</li>
+                <li>submit – пользователь отправил форму &lt;form&gt;</li>
+                <li>
+                  focus – пользователь фокусируется на элементе, например
+                  нажимает на &lt;input&gt;
                 </li>
                 <li>
-                  document.getElementsByClassName() - возвращает элементы,
-                  которые имеют данный класс.
-                </li>
-                <li>
-                  document.getElementsByName() возвращает элементы с заданным
-                  атрибутом name.
+                  keydown и keyup – когда пользователь нажимает / отпускает
+                  клавишу
                 </li>
               </ul>
-              <p>document.getElementById(), пример:</p>
-              <p>
-                let doc = document.getElementById("example");
-                <br />
-                console.log(doc);
-              </p>
-              <p>
-                В данном примере doc получает данные тега по id example а после
-                выводит эти данные в консоль
-              </p>
             </div>
           </div>
         </div>
@@ -156,8 +155,9 @@
               </a>
             </h2>
             <p>
-              Подключите JS к HTML и создайте один div задайте ему id, а в JS
-              получити этот div по id и вывидите его данные в консоль
+              Подключите JS к HTML и создайте один div внутри него какой-нибудь
+              контент, после добавьте в JS addEventListener на этот div и чтобы
+              когда мышь будет на элементе в консоль выводилось "Он тут"
             </p>
           </div>
         </div>

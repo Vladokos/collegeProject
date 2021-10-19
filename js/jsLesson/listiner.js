@@ -1,5 +1,5 @@
 let buttonClick = document.getElementById("buttonClick");
 
 buttonClick.addEventListener("click", () => {
-  alert("Click!");
+  console.log("Cilck!");
 });
