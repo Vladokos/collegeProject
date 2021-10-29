@@ -92,11 +92,20 @@
               <p>
                 Для того чтобы это анимировать всего лишь понадобилось задать
                 стили тегу <br />
-                .translitionBlockExample{ background-color: #3f2f22; width:
-                150px; height: 150px; transition: 0.8s ease-in; }
+                .translitionBlockExample{
                 <br />
-                тут были заданы цвет заднего фона для блока, ширина, высота и
-                translition
+                background-color: #3f2f22;
+                <br />
+                width: 150px;
+                <br />
+                height: 150px;
+                <br />
+                transition: 0.8s ease-in; }
+              </p>
+              <p>
+                тут были заданы цвет:
+                <br />
+                заднего фона для блока, ширина, высота и translition
                 <br />
                 translition: 0.8s - это длительность анимации, а ease-in - это
                 ее плавность
@@ -104,14 +113,20 @@
               <p>
                 На этом
                 <a class="aTeg" href="https://easings.net/ru">сайте</a> вы
-                можете посмотреть более обширный список анимаций с помощью 
+                можете посмотреть более обширный список анимаций с помощью
                 translation
               </p>
               <p>
                 Далее добавлен был псевдокласс :hover и стили <br />
-                .translitionBlockExample:hover{ width: 90px; height: 90px;
+                .translitionBlockExample:hover{
+                <br />
+                width: 90px; <br />
+                height: 90px;
+                <br />
                 background-color: #a7622a; }
                 <br />
+              </p>
+              <p>
                 При наведении эти стили применяются но с анимацией и после
                 потери фокуса стили возвращаются к изначальному состоянию также
                 с анимацией
@@ -126,7 +141,7 @@
                 повторяться ноль или более раз.
               </p>
               <p>
-                Чтобы задать keyframes нужно использовать  эту структуру:<br />
+                Чтобы задать keyframes нужно использовать эту структуру:<br />
                 @keyframes имя анимации { список правил }
               </p>
               <p>
@@ -134,9 +149,11 @@
                 Например:
               </p>
               <p>
-                @keyframes shadow { from {text-shadow: 0 0 3px black;} 50%
-                {text-shadow: 0 0 30px black;} to {text-shadow: 0 0 3px black;}
-                }
+                @keyframes shadow {
+                <br />
+                from {text-shadow: 0 0 3px black;} <br />
+                50% {text-shadow: 0 0 30px black;} <br />
+                to {text-shadow: 0 0 3px black;} }
               </p>
               <p>from - первый кадр, аналогичен 0%</p>
               <p>50% - на середине анимации</p>
@@ -152,7 +169,7 @@
                 тегу для этого нужно внутри тега написать:
               </p>
               <p>
-                animation: имя анимации  длительность анимации кол-во повторений
+                animation: имя анимации длительность анимации кол-во повторений
                 функция плавности
               </p>
               <ul>

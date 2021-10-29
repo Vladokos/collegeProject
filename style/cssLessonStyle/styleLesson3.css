@@ -16,6 +16,9 @@
 .font_w900 {
   font-weight: 900;
 }
-.line__height{
-    line-height: 90px;
+.line__height {
+  line-height: 90px;
+}
+.color{
+  color: #3f2f22;
 }
