@@ -53,3 +53,21 @@
 .answer__inner:hover .answer__code {
   visibility: visible;
 }
+@media (max-width: 874px) {
+  .task__inner,
+  .theory__inner {
+    width: 480px;
+    margin: 0 auto;
+  }
+  .header__numberLesson{
+    justify-self: start;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .task__inner,
+  .theory__inner {
+    width: 280px;
+  }
+}

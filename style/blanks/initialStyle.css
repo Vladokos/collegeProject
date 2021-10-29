@@ -39,7 +39,8 @@ p {
   align-items: center;
 }
 .back__button-arrow {
-  width: 10%;
+  width: 57px;
+  height: 57px;
 }
 .header__numberLesson {
   color: #f0e7d6;
@@ -60,7 +61,9 @@ p {
   font-weight: 500;
   line-height: 35px;
 }
-
+.code_redactor{
+  margin: 0 auto;
+}
 .achor {
   visibility: hidden;
   width: 2.5%;
@@ -83,10 +86,32 @@ p {
   margin-top: auto;
   background-color: #3f2f22;
 }
+.footer__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.github {
+  justify-self: end;
+}
 .aboutAuthor {
   color: #f0e7d6;
   text-align: center;
 }
 .subtitle {
   font-weight: 600;
+}
+@media (max-width:1521px) {
+  .header__backButton {
+    justify-self: center;
+  }
+}
+@media (max-width:460px) {
+  .header__backButton {
+    justify-self: end;
+  }
+  .footer__inner {
+    font-size: 12px;
+    grid-gap: 12px;
+  }
 }

@@ -1,8 +1,3 @@
-.header__inner {
-  display: grid;
-  grid-auto-flow: column;
-  align-items: center;
-}
 .title {
   font-size: 36px;
   font-family: "Montserrat", sans-serif;
@@ -60,7 +55,7 @@
   justify-self: end;
   width: 20%;
 }
-.material__css-button{
+.material__css-button {
   text-align: end;
 }
 .material__js {
@@ -69,9 +64,10 @@
   justify-self: center;
   width: 20%;
 }
-.material__js-button{
+.material__js-button {
   text-align: center;
 }
+
 
 
 /* media */
@@ -149,10 +145,10 @@
 @media (max-width: 320px) {
   .material::after {
     width: 82px;
-    transform: translate(155px, -47px) rotate(327deg);
+    transform: translate(156px, -47px) rotate(327deg);
   }
   .material::before {
-    width: 159px;
+    width: 168px;
     transform: translate(63px, 47px) rotate(13deg);
   }
 }

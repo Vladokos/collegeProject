@@ -24,9 +24,6 @@ body {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
 }
-.back__button-arrow {
-  width: 10%;
-}
 .header__numberLesson {
   color: #f0e7d6;
   line-height: 50px;
