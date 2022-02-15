@@ -21,3 +21,57 @@
 .answer__inner:hover .answer__code {
   visibility: visible;
 }
+@media (max-width: 1165px) {
+  .task__inner,
+  .theory__inner {
+    width: 950px;
+  }
+}
+@media (max-width: 947px) {
+  .task__inner,
+  .theory__inner {
+    width: 900px;
+  }
+  .header__numberLesson {
+    justify-self: start;
+  }
+}
+@media (max-width: 863px) {
+  .task__inner,
+  .theory__inner {
+    width: 800px;
+  }
+  .header__numberLesson {
+    justify-self: start;
+  }
+}
+@media (max-width: 796px) {
+  .task__inner,
+  .theory__inner {
+    width: 700px;
+  }
+}
+@media (max-width: 710px) {
+  .task__inner,
+  .theory__inner {
+    width: 600px;
+  }
+}
+@media (max-width: 618px) {
+  .task__inner,
+  .theory__inner {
+    width: 500px;
+  }
+}
+@media (max-width: 518px) {
+  .task__inner,
+  .theory__inner {
+    width: 400px;
+  }
+}
+@media (max-width: 400px) {
+  .task__inner,
+  .theory__inner {
+    width: 300px;
+  }
+}

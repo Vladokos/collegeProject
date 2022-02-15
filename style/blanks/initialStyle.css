@@ -61,8 +61,9 @@ p {
   font-weight: 500;
   line-height: 35px;
 }
-.code_redactor{
+.code_redactor {
   margin: 0 auto;
+  width: 1200px;
 }
 .achor {
   visibility: hidden;
@@ -101,17 +102,93 @@ p {
 .subtitle {
   font-weight: 600;
 }
-@media (max-width:1521px) {
+@media (max-width: 1521px) {
   .header__backButton {
     justify-self: center;
   }
 }
-@media (max-width:460px) {
+@media (max-width: 1215px) {
+  .code_redactor {
+    width: 800px;
+  }
+}
+@media (max-width: 874px) {
+  .task__inner,
+  .theory__inner {
+    width: 700px;
+  }
+  .header__numberLesson {
+    justify-self: start;
+    font-size: 20px;
+  }
+  .footer {
+    display: flex;
+  }
+  .answer__code-img {
+    display: none;
+  }
+}
+@media (max-width: 820px) {
+  .code_redactor {
+    width: 400px;
+  }
+}
+
+@media (max-width: 716px) {
+  .task__inner,
+  .theory__inner {
+    width: 600px;
+  }
+}
+@media (max-width: 622px) {
+  .task__inner,
+  .theory__inner {
+    width: 500px;
+  }
+}
+@media (max-width: 512px) {
+  .task__inner,
+  .theory__inner {
+    width: 400px;
+  }
+}
+@media (max-width: 460px) {
   .header__backButton {
     justify-self: end;
   }
   .footer__inner {
     font-size: 12px;
     grid-gap: 12px;
+  }
+  .answer__inner,
+  .task__inner,
+  .theory__inner {
+    width: 400px;
+  }
+  .answer__code {
+    display: block;
+  }
+}
+@media (max-width: 373px) {
+  .code_redactor {
+    width: 200px;
+  }
+  .header__backButton {
+    margin-left: 215px;
+  }
+  .header__numberLesson {
+    display: none;
+  }
+  .answer__inner,
+  .task__inner,
+  .theory__inner {
+    width: 340px;
+  }
+}
+@media (max-width: 320px) {
+  .answer__inner,
+  .task__inner,
+  .theory__inner {
+    width: 280px;
   }
 }

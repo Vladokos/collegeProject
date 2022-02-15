@@ -56,16 +56,61 @@
 @media (max-width: 874px) {
   .task__inner,
   .theory__inner {
-    width: 480px;
-    margin: 0 auto;
+    width: 700px;
   }
-  .header__numberLesson{
+  .header__numberLesson {
     justify-self: start;
     font-size: 20px;
+  }
+  .footer {
+    display: flex;
+  }
+  .answer__code-img {
+    display: none;
+  }
+}
+@media (max-width: 716px) {
+  .task__inner,
+  .theory__inner {
+    width: 600px;
+  }
+}
+@media (max-width: 622px) {
+  .task__inner,
+  .theory__inner {
+    width: 500px;
+  }
+}
+@media (max-width: 512px) {
+  .task__inner,
+  .theory__inner {
+    width: 400px;
+  }
+}
+@media (max-width: 460px) {
+  .answer__inner,
+  .task__inner,
+  .theory__inner {
+    width: 400px;
+  }
+  .answer__code {
+    display: block;
+  }
+}
+
+@media (max-width: 375px) {
+  .header__numberLesson {
+    font-size: 18px;
+  }
+  .answer__inner,
+  .task__inner,
+  .theory__inner {
+    width: 340px;
   }
 }
 
 @media (max-width: 320px) {
+  .answer__inner,
   .task__inner,
   .theory__inner {
     width: 280px;

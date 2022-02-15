@@ -18,6 +18,9 @@ h3 {
 .background {
   padding: 80px 0 35px 0;
 }
+.square{
+  height: 228px;
+}
 .square__button {
   width: 20%;
   transition: all ease-in-out 0.8s;
@@ -35,7 +38,12 @@ h3 {
   padding: 10px;
   border-radius: 50px;
 }
+.ident-block{
+  width:100%;
+  height:200px;
+}
 .ident__examples {
+  display: inline-block;
   width: 40px;
   height: 40px;
   border: 5px solid #f0e7d6;

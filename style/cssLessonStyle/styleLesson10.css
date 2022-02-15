@@ -20,26 +20,28 @@
 
 @keyframes moveBlackBox {
   0% {
-    left: 20%;
-    top: 79.2em;
+    transform: translate(0, 0);
   }
   20% {
-    left: 24.8%;
-    top: 79.2em;
+    transform: translate(90px, 0);
   }
   40% {
-    top: 83.3em;
+    transform: translate(90px, 90px);
   }
   80% {
-    left: 20%;
-    top: 83.3em;
+    transform: translate(0, 90px);
   }
   100% {
-    top: 79.2em;
+    transform: translate(0, 0);
   }
 }
 
 .beforeExample::before {
   content: "Я псевдоэлемент ::before";
   margin-right: 20px;
+}
+@media (max-width: 320px) {
+  .whatPsevdo h2{
+    font-size: 24px;
+  }
 }
