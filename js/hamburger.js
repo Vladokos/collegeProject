@@ -1,5 +1,3 @@
-// получаем айди бургер меню который в хеддере
-// получаем айди контента который будет выезжать
 const burgerMenu = document.getElementById("header__burgergMenu");
 const burgerMenuContent = document.getElementById("burgerMenu__content");
 let checkClick = false;

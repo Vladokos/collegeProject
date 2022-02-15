@@ -50,22 +50,13 @@ let stateChng = [
 let counter = 0;
 
 juc.addEventListener("click", () => {
-  if (counter === 0) {
-    stateJuc.innerHTML = stateChng[counter];
-    juc.classList.add(classAdd[counter]);
-    counter++;
-  } else {
-    stateJuc.innerHTML = stateChng[counter];
-    juc.classList.add(classAdd[counter]);
+  stateJuc.innerHTML = stateChng[counter];
+  juc.classList.add(classAdd[counter]);
+  juc.classList.remove(classAdd[counter - 1]);
+  counter++;
+  if(counter === 4){
     juc.classList.remove(classAdd[counter - 1]);
-
-    if (counter === 4) {
-      juc.classList.remove(classAdd[counter]);
-      stateJuc.innerHTML = "justify-content: flex-start;";
-      counter = 0;
-    } else {
-      counter++;
-    }
+    counter = 0;
   }
 });
 
@@ -83,21 +74,13 @@ let stateChngAlg = [
 let counterAlg = 0;
 
 algItems.addEventListener("click", () => {
-  if (counterAlg === 0) {
-    stateAlgItems.innerHTML = stateChngAlg[counterAlg];
-    algItems.classList.add(classAddAlg[counterAlg]);
-    counterAlg++;
-  } else {
-    stateAlgItems.innerHTML = stateChngAlg[counterAlg];
-    algItems.classList.add(classAddAlg[counterAlg]);
+  stateAlgItems.innerHTML = stateChngAlg[counterAlg];
+  algItems.classList.add(classAddAlg[counterAlg]);
+  algItems.classList.remove(classAddAlg[counterAlg - 1]);
+  
+  counterAlg++;
+  if (counterAlg === 4) {
     algItems.classList.remove(classAddAlg[counterAlg - 1]);
-
-    if (counterAlg === 4) {
-      algItems.classList.remove(classAddAlg[counterAlg]);
-      stateAlgItems.innerHTML = "align-items: flex-start;";
-      counterAlg = 0;
-    } else {
-      counterAlg++;
-    }
+    counterAlg = 0;
   }
 });
